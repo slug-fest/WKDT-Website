@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: black;
+}
+header {
+    background-color: #343741;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+.headImage {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 60px;
+    width: auto;
+    transition: 0.3s;
+}
+.headImage.shrink {
+    left: 5px;
+    width: auto;
+    height: 40px;
+}
+.parentImage {
+    position: absolute;
+    top: 5px;
+    left: 220px;
+    height: 60px;
+    width: auto;
+    transition: 0.3s;
+}
+.parentImage.shrink {
+    left: 160px;
+    width: auto;
+    height: 40px;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu li {
+    margin: 1rem 15px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+.nav-menu a:hover {
+    color: #D3BC8D;
+    text-decoration: underline;
+}
+.listenNow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 50px;
+    background-color: #D3BC8D;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 700;
+    align-content: center;
+    text-align: center;
+
+}
+.listenNow:hover {
+    background-color: white;
+}
+.shadow {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+}
+#content {
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+    background-color: black;
+    color: white;
+}
+.bigImageContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.bigImage {
+    display: block;
+    width:100%;
+}
+.bigImageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 38rem;
+    background-color: rgba(0,0,0,0.8);
+}
+.bigImageOverlayContainer {
+    padding: 1.5rem;
+}
+.bigImageHeader {
+    font-size: 2.8rem;
+    font-weight: 600;
+    width: 562px;
+    padding: 1.5rem 0;
+}
+.bigImageText {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.85;
+    width: 562px;
+    margin-bottom: 1.5rem;
+}
+.bigImageButton {
+    background-color: #D3BC8D;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.85;
+    border: 2px solid transparent;
+    padding: 0.8em 1em 0.7em 1em;
+    margin: 1.5rem 0;
+}
+.bigImageButton:hover {
+    background-color: white;
+    border: 2px solid grey;
+}
