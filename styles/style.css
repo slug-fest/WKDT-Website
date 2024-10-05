@@ -145,9 +145,41 @@ header {
     border: 2px solid grey;
 }
 footer {
-    background-color: #000;
-    position: absolute;
+    background-color: black;
+    position: relative;
+    top: 50px;
+    display: flex;
+    width: 100%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
-.footer-div {
+.footerDiv {
     width: 25%;
+    display: inline-block;
+}
+.footImage {
+    padding: 5% 15%;
+    width: 70%;
+}
+.footParentImage {
+    padding: 5% 35%;
+    width: 30%;
+}
+#footer .hr{
+    background-color: #D3BC8D;
+    opacity: 1;
+    width: 46%;
+    height: 2px;
+    border:0;
+    margin: 1rem 0;
+}
+#footer ul {
+    list-style: none;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+}
+#footer li {
+    padding: .25em 0 .25em 0;
+}
+#footer a {
+    color: #D3BC8D;
 }
