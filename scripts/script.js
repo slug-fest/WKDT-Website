@@ -1,5 +1,6 @@
 window.onload = function() {
     loadHeader();
+    loadFooter();
 }
 window.onscroll = function() {
     shrinkHeader();
@@ -10,6 +11,14 @@ function loadHeader() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
+        });
+}
+
+function loadFooter() {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
         });
 }
 
