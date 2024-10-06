@@ -1,25 +1,39 @@
+body {
+    background-color: white;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 0.8rem;
+}
 .cards {
-    color: white;
-    margin: 2%
+    display: grid;
+    gap: 1%;
+    margin: 2%;
 }
 .cards div {
-    margin: 2%;
-    padding: 2%;
-    background-color: white;
-    color: black;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
 }
-#leaders div {
-    display: inline-grid;
-    width: 24%;
-    min-width: 300px;
+.cardImg {
+    width: 100%;
 }
-#staff div {
-    display: inline-grid;
-    width: 16%;
-    min-width: 225px;
+.titleCard {
+    display: grid;
+    grid-template-rows: auto 1.5fr 1fr auto 3fr;
 }
-#members div {
-    display: inline-grid;
-    width: 8%;
-    min-width: 150px;
+#leaders {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#staff {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+#members {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
