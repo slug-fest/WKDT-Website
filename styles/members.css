@@ -1,0 +1,25 @@
+.cards {
+    color: white;
+    margin: 2%
+}
+.cards div {
+    margin: 2%;
+    padding: 2%;
+    background-color: white;
+    color: black;
+}
+#leaders div {
+    display: inline-grid;
+    width: 24%;
+    min-width: 300px;
+}
+#staff div {
+    display: inline-grid;
+    width: 16%;
+    min-width: 225px;
+}
+#members div {
+    display: inline-grid;
+    width: 8%;
+    min-width: 150px;
+}
