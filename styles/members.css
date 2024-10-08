@@ -1,3 +1,7 @@
+h1 {
+    width: 100%;
+    text-align: center;
+}
 h2 {
     font-size: 2rem;
 }
@@ -8,6 +12,11 @@ h3 {
     display: grid;
     gap: 1%;
     margin: 2%;
+}
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
 }
 .cards div {
     padding: 1%;
@@ -25,7 +34,7 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 #staff {
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 #members {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
