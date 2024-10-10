@@ -133,7 +133,6 @@ header {
 }
 #content {
     position: relative;
-    /*z-index: -1;*/
     background-color: black;
     color: white;
 }
@@ -184,6 +183,14 @@ header {
 .bigImageButton:hover {
     background-color: white;
     border: 2px solid grey;
+}
+@media (max-width: 1024px) {
+    .bigImageOverlay {
+        position: initial;
+    }
+    .bigImageHeader, .bigImageText{
+        width: 100%;
+    }
 }
 footer {
     background-color: black;

@@ -1,0 +1,31 @@
+.tidal {
+    display: none;
+}
+.spotify {
+    display: none;
+}
+.youtube {
+    display: none;
+}
+.shown {
+    display: block !important;
+    border-radius: 12px;
+}
+.hidden {
+    display: none;
+}
+button {
+    background-color: #D3BC8D;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 700;
+    align-content: center;
+    text-align: center;
+    border: 0;
+}
+#calendarContainer {
+    margin: 10%;
+    height: 60vw;
+}
