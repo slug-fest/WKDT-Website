@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width"/>
         <title>89.3 FM | WKDT Cadet Radio & DJ</title>
+        <link rel="icon" href="images/OldLogoFavicon3.ico" type="image/x-icon">
         <link href="styles/style.css" rel="stylesheet"/>
         <link href="styles/events.css" rel="stylesheet"/>
         <link rel="stylesheet" href="caleandar-0.1.0/css/calendar.css"/>
@@ -17,31 +18,46 @@
                 <div class="bigImageOverlay">
                     <div class="bigImageOverlayContainer">
                         <h1 class="bigImageHeader">Event Support by WKDT</h1>
-                        <p class="bigImageText">WKDT supports events n shit.</p>
+                        <p class="bigImageText">WKDT provides entertainment services to bolster the spirit of the Corps of Cadet and surrounding communities.</p>
+                        <a href="#live" class="bigImageButton">Tune In to WKDT's Live Stream</a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="calendarContainer">
+            <h1>Event Calendar</h1>
             <button onclick="loadCal()" id="loadCalButton">Load the calendar</button>
             <div id='calendar'></div>
         </section>
-        <section>
+        <section id="eventReplays">
+            <h1>Event Replays</h1>
             <label for="musicService">Choose a music service:</label>
             <select id="musicService" onchange="changeService()">
-                <option value="none">None</option>
+                <option value=".none">None</option>
                 <option value=".tidal">Tidal</option>
                 <option value=".spotify">Spotify</option>
                 <option value=".youtube">YouTube</option>
             </select>
-            <iframe class="tidal service" width="48%" height="600" src="https://embed.tidal.com/playlists/65670802-cc24-4eee-879a-ce034e318d61" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
-            <iframe class="spotify service" width="48%" height="600" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUZMtnnlvJ9p?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            <iframe class="youtube service" width="48%" height="600" src="https://www.youtube.com/embed/videoseries?si=4NMs4q14nIyVZXCN&amp;list=PLkqz3S84Tw-T-CdSCnxoq86C0pwNGSV4n" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div class="none service shown">
+                <p class="explainer">Please select a music provider</p>
+            </div>
+            <div class="tidal loading">
+                <p class="explainer">Tidal is loading...</p>
+            </div>
+            <div class="spotify loading">
+                <p class="explainer">Spotify is loading...</p>
+            </div>
+            <div class="youtube loading">
+                <p class="explainer">YouTube is loading...</p>
+            </div>
+            <iframe class="tidal service" src="https://embed.tidal.com/playlists/65670802-cc24-4eee-879a-ce034e318d61" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
+            <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUZMtnnlvJ9p?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="youtube service" src="https://www.youtube.com/embed/videoseries?si=4NMs4q14nIyVZXCN&amp;list=PLkqz3S84Tw-T-CdSCnxoq86C0pwNGSV4n&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </section>
         <footer id="footer">
         </footer>
         <script src="scripts/script.js"></script>
-        <script src="scripts/events.js"></script>
         <script src="caleandar-0.1.0/js/caleandar.js"></script>
+        <script src="scripts/events.js"></script>
     </body>
 </html>

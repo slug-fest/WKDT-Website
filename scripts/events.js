@@ -1,5 +1,8 @@
 function changeService() {
     const choice = document.getElementById('musicService').value;
+    document.querySelectorAll(".loading").forEach(element => {
+        element.classList.remove("shown");
+    });
     document.querySelectorAll(".service").forEach(element => {
         element.classList.remove("shown");
     });
@@ -7,17 +10,25 @@ function changeService() {
         element.classList.add("shown");
     });
 }
+function modifyIframe() {
+    var iframe = document.getElementsByClassName('youtube')[0];
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var targetElement = innerDoc.getElementById('ytp-id-22');
+
+    if (targetElement) {
+        targetElement.style.display = "";
+    }
+}
 function loadCal() {
     document.getElementById('loadCalButton').classList.add("hidden");
     if (document.getElementById('calendar').children.length===0) {
         var element = document.getElementById('calendar');
         var events = [
-
-            {'Date': new Date(2024, 9, 7), 'Title': 'Broadcast Football Game', 'Time':'12:00 - 16:00', 'Description': "It's a pretty big deal!"},
+            // REMEMBER, the month (second column) starts at ZERO, not one.
             {'Date': new Date(2024, 9, 8), 'Title': 'Drill Support', 'Time':'16:30 - 18:30', 'Description': "Provide audio system for 1st & 2nd Reg Drill Practice"},
             {'Date': new Date(2024, 9, 10), 'Title': 'Drill Support', 'Time':'16:30 - 18:30', 'Description': "Provide audio system for 1st/2nd drill practice"},
-            {'Date': new Date(2024, 9, 7), 'Title': 'Broadcast Football Game', 'Time':'12:00 - 16:00', 'Description': "It's a pretty big deal!"},
-            {'Date': new Date(2024, 9, 7), 'Title': 'Broadcast Football Game', 'Time':'12:00 - 16:00', 'Description': "It's a pretty big deal!"},
+            {'Date': new Date(2024, 9, 12), 'Title': 'Broadcast Football', 'Time':'12:00 - 16:00', 'Description': "UAB @ USMA"},
+            //{'Date': new Date(2024, mm, dd), 'Title': "", 'Time':'hh:mm - hh:mm', 'Description': ""},
 
         ];
         var settings={
@@ -37,3 +48,4 @@ function loadCal() {
         caleandar(element, events, settings);
     }
 }
+window.onload = loadCal();

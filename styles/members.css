@@ -8,18 +8,17 @@ h2 {
 h3 {
     font-size: 1.2rem;
 }
-/*h1, h2, h3 {
-    text-align: center;
-}*/
+a {
+    color: white;
+}
+a:hover {
+    color: #D3BC8D;
+}
 .cards {
     display: grid;
-    gap: 1%;
     margin: 2%;
-}
-.clearfix {
-    content: "";
-    display: block;
-    clear: both;
+    grid-auto-rows: minmax(auto, auto);
+    /*DO NOT USE GAP - the height of gaps does not get taken into account by chromium.*/
 }
 .cards div {
     padding: 1%;
@@ -32,6 +31,7 @@ h3 {
 }
 .titleCard {
     display: block;
+    margin: .2vh .2vw;
 }
 #leaders {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -41,4 +41,16 @@ h3 {
 }
 #members {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.non-leader {
+    margin: .2vh .2vw;
+}
+.non-leader h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2rem;
+    height: 2.4rem;
+}
+.non-leader p {
+    font-size: 0.8rem;
 }
