@@ -31,7 +31,7 @@ function loadCal() {
             {'Date': new Date(2024, 9, 15), 'Title': 'Drill Support', 'Time':'16:30 - 18:30', 'Description': "Provide audio system for 3rd/4th drill practice"},
             {'Date': new Date(2024, 9, 16), 'Title': 'Drill Support', 'Time':'16:30 - 18:30', 'Description': "Provide audio system for 1st/2nd drill practice"},
             {'Date': new Date(2024, 9, 17), 'Title': 'Drill Support', 'Time':'16:30 - 18:30', 'Description': "Provide audio system for full brigade drill practice"},
-            {'Date': new Date(2024, 9, 18), 'Title': '1st Reg BBQ', 'Time':'18:00 - 20:00', 'Description': "Provide DJ support for 1st Reg Homecoming BBQ"},
+            {'Date': new Date(2024, 9, 18), 'Title': '4th Reg TurkeyBowl', 'Time':'17:00 - 19:30', 'Description': "Provide DJ support for 4th Reg TurkeyBowl"},
             {'Date': new Date(2024, 9, 18), 'Title': '2nd Reg BBQ', 'Time':'18:00 - 20:30', 'Description': "Provide DJ support for 2nd Reg Homecoming BBQ"},
             {'Date': new Date(2024, 9, 19), 'Title': 'ECU @ USMA 🏈', 'Time':'12:00 - 16:00', 'Description': "Broadcast live coverage of Army football (Homecoming Game)"},
             {'Date': new Date(2024, 9, 25), 'Title': 'Brigade Sandhurst', 'Time': '16:30 - 20:30', 'Description': "Provide DJ support for Brigade Sandhurst Combatives"},
