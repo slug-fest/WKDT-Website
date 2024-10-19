@@ -14,17 +14,21 @@
     display: none;
     background-color: #8005;
 }
+.youtubeMusic {
+    display: none;
+    background-color: #8005;
+}
 .service, .loading {
     border-radius: 12px;
     position: absolute;
     top: 3em;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 70vh;
 }
 .explainer {
     text-align: center;
-    color: white;
+    color: grey;
     font-size: 2em;
     font-weight: bold;
 }
@@ -51,7 +55,19 @@ button {
 }
 #eventReplays {
     margin: 5vh 10vw;
+    box-sizing: border-box;
+}
+details > summary {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+details > div {
     position: relative;
     box-sizing: border-box;
-    height: 70vh;
+    height: 80vh;
 }

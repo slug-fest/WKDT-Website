@@ -30,29 +30,62 @@
             <div id='calendar'></div>
         </section>
         <section id="eventReplays">
-            <h1>Event Replays - None available yet, feature demo below.</h1>
+            <h1>Event Replays</h1>
             <label for="musicService">Choose a music service:</label>
             <select id="musicService" onchange="changeService()">
                 <option value=".none">None</option>
                 <option value=".tidal">Tidal</option>
                 <option value=".spotify">Spotify</option>
                 <option value=".youtube">YouTube</option>
+                <option value=".youtubeMusic">YouTube Music</option>
             </select>
-            <div class="none service shown">
-                <p class="explainer">Please select a music provider</p>
-            </div>
-            <div class="tidal loading">
-                <p class="explainer">Tidal is loading...</p>
-            </div>
-            <div class="spotify loading">
-                <p class="explainer">Spotify is loading...</p>
-            </div>
-            <div class="youtube loading">
-                <p class="explainer">YouTube is loading...</p>
-            </div>
-            <iframe class="tidal service" src="https://embed.tidal.com/playlists/65670802-cc24-4eee-879a-ce034e318d61" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
-            <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUZMtnnlvJ9p?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            <iframe class="youtube service" src="https://www.youtube.com/embed/videoseries?si=4NMs4q14nIyVZXCN&amp;list=PLkqz3S84Tw-T-CdSCnxoq86C0pwNGSV4n&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <details open class="replayContainer">
+                <summary>2nd Reg BBQ</summary>
+                <div>
+                    <p>by DJ Coop on 10/18/2024</p>
+                    <div class="none service shown">
+                        <p class="explainer">Please select a music provider</p>
+                    </div>
+                    <div class="tidal loading">
+                        <p class="explainer">Tidal is loading...</p>
+                    </div>
+                    <div class="spotify loading">
+                        <p class="explainer">Spotify is loading...</p>
+                    </div>
+                    <div class="youtube loading">
+                        <p class="explainer">YouTube is loading...</p>
+                    </div>
+                    <div class="youtubeMusic loading">
+                        <p class="explainer">YouTube Music is loading...</p>
+                    </div>
+                    <iframe class="tidal service" src="https://embed.tidal.com/playlists/bd638bfc-4709-4b7c-a150-41d60bd2ad1f" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
+                    <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/1vTWO8lt05Sq543ZRbwXT1?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <iframe class="youtube service" src="https://www.youtube.com/embed/videoseries?si=lvVWo8AaBOMnY76F&amp;list=PLOh6mlSStDuQ8rXuQIKYg2Jpw98qYJfI9&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="youtubeMusic service" src="https://www.youtube.com/embed/videoseries?si=pMeUK0dq9LNL4q-w&amp;list=PLOh6mlSStDuS6EGwOA6j-RvtJHFoPs_Yf&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </details>
+            <details class="replayContainer">
+                <summary>Placeholder (for more events!)</summary>
+                <div>
+                    <p></p>
+                    <div class="none service shown">
+                        <p class="explainer">Please select a music provider</p>
+                    </div>
+                    <div class="tidal loading">
+                        <p class="explainer">Tidal is loading...</p>
+                    </div>
+                    <div class="spotify loading">
+                        <p class="explainer">Spotify is loading...</p>
+                    </div>
+                    <div class="youtube loading">
+                        <p class="explainer">YouTube is loading...</p>
+                    </div>
+                    <iframe class="tidal service" src="https://embed.tidal.com/playlists/be2d86d1-7a61-42f9-b810-c81cccfa5fc7" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
+                    <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/3CIaXocK1CC236bd4rh1Kk?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <iframe class="youtube service" src="https://www.youtube.com/embed/dQw4w9WgXcQ?&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="youtubeMusic service" src="https://www.youtube.com/embed/lYBUbBu4W08?&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </details>
         </section>
         <footer id="footer">
         </footer>

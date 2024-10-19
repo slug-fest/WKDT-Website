@@ -10,15 +10,6 @@ function changeService() {
         element.classList.add("shown");
     });
 }
-function modifyIframe() {
-    var iframe = document.getElementsByClassName('youtube')[0];
-    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    var targetElement = innerDoc.getElementById('ytp-id-22');
-
-    if (targetElement) {
-        targetElement.style.display = "";
-    }
-}
 function loadCal() {
     document.getElementById('loadCalButton').classList.add("hidden");
     if (document.getElementById('calendar').children.length===0) {
