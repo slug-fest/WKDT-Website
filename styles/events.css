@@ -29,7 +29,6 @@
 .explainer {
     text-align: center;
     color: grey;
-    font-size: 2em;
     font-weight: bold;
 }
 .shown {
@@ -57,7 +56,7 @@ button {
     margin: 5vh 10vw;
     box-sizing: border-box;
 }
-details > summary {
+.replayTitle {
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -66,8 +65,44 @@ details > summary {
     font-weight: bold;
     unicode-bidi: isolate;
 }
-details > div {
+.replayContainer {
     position: relative;
     box-sizing: border-box;
     height: 75vh;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    background-color: #eee;
+    border-radius: 32px;
+}
+.radioLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 8px;
+    border-radius: 32px;
+    transition: background-color 0.3s;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .radioLabel {
+    background-color: #ccc; /* Background color for the selected item */
+}
+.radioLabel[for="none"] {
+    color: #555;
+}
+.radioLabel[for="tidal"] {
+    color: #000;
+}
+.radioLabel[for="spotify"] {
+    color: #0A0;
+}
+.radioLabel[for="youtube"],
+.radioLabel[for="youtubeMusic"] {
+    color: #F00;
 }

@@ -1,99 +1,116 @@
 .cld-main{
   width: auto;
 }
-.cld-main a{
-  color: white;
+.cld-datetime{
+  position: relative;
+  width: 66%;
+  min-width: 100px;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
 }
-  .cld-datetime{
-    position: relative;
-    width: 66%;
-    min-width: 100px;
-    max-width: 300px;
-    margin: auto;
-    overflow: hidden;
+.cld-datetime .today{
+  position: relative;
+  float: left;
+  width: calc(100% - 40px);
+  margin: auto;
+  text-align: center;
+}
+.cld-nav{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+.cld-nav:hover{
+  cursor: pointer;
+}
+.cld-nav:hover svg{
+    fill: #666;
+}
+.cld-rwd{
+  float: left;
+}
+.cld-fwd{
+  float: right;
+}
+  .cld-nav svg:hover{
+    fill: #D3BC8D;
   }
-  .cld-datetime .today{
-    position: relative;
-    float: left;
-    width: calc(100% - 40px);
-    margin: auto;
-    text-align: center;
-  }
-  .cld-nav{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-  }
-  .cld-nav:hover{
-    cursor: pointer;
-  }
-  .cld-nav:hover svg{
-      fill: #666;
-  }
-  .cld-rwd{
-    float: left;
-  }
-  .cld-fwd{
-    float: right;
-  }
-    .cld-nav svg:hover{
-      fill: #D3BC8D;
-    }
 .cld-labels, .cld-days{
-  padding-left: 0;
+padding-left: 0;
 }
-  .cld-label, .cld-day{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 14.28%;
-    text-align: center;
-  }
-  .cld-day{
-    display: block;
-    float: left;
-    position: relative;
-    margin: 0;
-    padding: 5px;
-    height: 10vh;
-    border: 1px solid #ddd;
-    overflow-y: auto;
-  }
-  .cld-day.clickable:hover{
-    cursor: pointer;
-  }
-  .cld-day.today{
-    border: 2px solid #D3BC8D;
-  }
-  .cld-day.disableDay{
-    opacity: 0.5;
-  }
-  .cld-day.nextMonth, .cld-day.prevMonth{
-    opacity: 0.33;
-  }
-    .cld-number{
-      margin: 0;
-      text-align: left;
-    }
-      .cld-title{
-        display: block;
-        margin: 5px;
-        padding: 5px;
-        font-weight: normal;
-        background-color: #D3BC8D;
-      }
-      .cld-day:hover{
-        background: #eee;
-      }
-      .cld-number.eventday{
-        font-weight: bold;
-/*        overflow: auto;*/
-      }
-      .cld-number.eventday:hover{
-        background: #eee;
-      }
-      .today .cld-number.eventday:hover{
-      }
-.eventDetails {
-  display: none;
+.cld-label, .cld-day{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 14.28%;
+  text-align: center;
+}
+.cld-day{
+  display: block;
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  height: 10vh;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+}
+.cld-day.clickable:hover{
+  cursor: pointer;
+}
+.cld-day.today{
+  border: 2px solid #D3BC8D;
+}
+.cld-day.disableDay{
+  opacity: 0.5;
+}
+.cld-day.nextMonth, .cld-day.prevMonth{
+  opacity: 0.33;
+}
+.cld-number{
+  margin: 0;
+  text-align: left;
+}
+.cld-title{
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  font-weight: normal;
+  font-size: min(1vw, 100%);
+  background-color: #D3BC8D;
+}
+.cld-day:hover{
+  background: #eee;
+}
+.cld-number.eventday{
+  font-weight: bold;
+  /*overflow: auto;*/
+}
+.cld-number.eventday:hover{
+  background: #eee;
+}
+.today .cld-number.eventday:hover{
+}
+summary.eventTitle {
+  list-style: none;
+  position: relative;
+  padding-left: 1.5em; /* Adjust as needed */
+}
+summary.eventTitle::before {
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+summary.eventTitle.pa::before {
+  content: '🎤';
+}
+summary.eventTitle.dj::before {
+  content: '🔊';
+}
+summary.eventTitle.fb::before {
+  content: '🏈';
+}
+details[open] summary.eventTitle::before {
+  transform: rotate(90deg);
 }

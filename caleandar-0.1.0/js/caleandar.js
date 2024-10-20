@@ -210,7 +210,13 @@ function createCalendar(calendar, element, adjuster){
           number.className += " eventday";
           var title = document.createElement('span');
           title.className += "cld-title";
-          title.innerHTML += '<label><button onclick="expandEvent(\''+n+'\');" class="hidden"></button><p id="event'+n+'title">'+calendar.Model[n].Title+'<br>'+calendar.Model[n].Time+'</p><div id="event'+n+'" class="eventDetails"><h3>'+calendar.Model[n].Title+'</h3><p>'+calendar.Model[n].Time+'<br>Details: '+calendar.Model[n].Description+'</p></div></label>';
+          title.innerHTML += `
+            <details>
+              <summary class="eventTitle ${calendar.Model[n].Type}">${calendar.Model[n].Title}: ${calendar.Model[n].Time}&nbsp;&#8209;&nbsp;${calendar.Model[n].T_end}</summary>
+              <div class="eventDetails">
+                <p>Details: ${calendar.Model[n].Description}</p>
+              </div>
+            </details>`;
           console.log("DID THIS ONE");
           number.appendChild(title);
         }

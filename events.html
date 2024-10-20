@@ -18,7 +18,7 @@
                 <div class="bigImageOverlay">
                     <div class="bigImageOverlayContainer">
                         <h1 class="bigImageHeader">Event Support by WKDT</h1>
-                        <p class="bigImageText">WKDT provides entertainment services to bolster the spirit of the Corps of Cadet and surrounding communities.</p>
+                        <p class="bigImageText">WKDT provides entertainment services to bolster the spirit of the Corps of Cadets as well as the surrounding communities.</p>
                         <a href="#live" class="bigImageButton">Tune In to WKDT's Live Stream</a>
                     </div>
                 </div>
@@ -31,31 +31,48 @@
         </section>
         <section id="eventReplays">
             <h1>Event Replays</h1>
-            <label for="musicService">Choose a music service:</label>
+            <!--<label for="musicService">Choose a music service:</label>
             <select id="musicService" onchange="changeService()">
                 <option value=".none">None</option>
                 <option value=".tidal">Tidal</option>
                 <option value=".spotify">Spotify</option>
                 <option value=".youtube">YouTube</option>
                 <option value=".youtubeMusic">YouTube Music</option>
-            </select>
-            <details open class="replayContainer">
-                <summary>2nd Reg BBQ by DJ Coop | 10/18/2024</summary>
-                <div>
+            </select>-->
+            <div id="selectService" class="radio-group">
+                <input type="radio" id="none" name="service" onClick="changeService('.none')" checked>
+                <label for="none" class="radioLabel">None</label>
+
+                <input type="radio" id="tidal" name="service" onClick="changeService('.tidal')">
+                <label for="tidal" class="radioLabel">Tidal</label>
+
+                <input type="radio" id="spotify" name="service" onClick="changeService('.spotify')">
+                <label for="spotify" class="radioLabel">Spotify</label>
+
+                <input type="radio" id="youtube" name="service" onClick="changeService('.youtube')">
+                <label for="youtube" class="radioLabel">YouTube</label>
+
+                <input type="radio" id="youtubeMusic" name="service" onClick="changeService('.youtubeMusic')">
+                <label for="youtubeMusic" class="radioLabel">YouTube Music</label>
+            </div>
+            <hr>
+            <details open>
+                <summary id="10/18/2024_2" class="replayTitle">2nd Reg BBQ by DJ Coop | 10/18/2024</summary>
+                <div class="replayContainer">
                     <div class="none service shown">
-                        <p class="explainer">Please select a music provider</p>
+                        <h3 class="explainer">Please <a href="#selectService">select a music provider</a></h3>
                     </div>
                     <div class="tidal loading">
-                        <p class="explainer">Tidal is loading...</p>
+                        <h3 class="explainer">Tidal is loading...</h3>
                     </div>
                     <div class="spotify loading">
-                        <p class="explainer">Spotify is loading...</p>
+                        <h3 class="explainer">Spotify is loading...</h3>
                     </div>
                     <div class="youtube loading">
-                        <p class="explainer">YouTube is loading...</p>
+                        <h3 class="explainer">YouTube is loading...</h3>
                     </div>
                     <div class="youtubeMusic loading">
-                        <p class="explainer">YouTube Music is loading...</p>
+                        <h3 class="explainer">YouTube Music is loading...</h3>
                     </div>
                     <iframe class="tidal service" src="https://embed.tidal.com/playlists/bd638bfc-4709-4b7c-a150-41d60bd2ad1f" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
                     <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/1vTWO8lt05Sq543ZRbwXT1?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -63,23 +80,24 @@
                     <iframe class="youtubeMusic service" src="https://www.youtube.com/embed/videoseries?si=pMeUK0dq9LNL4q-w&amp;list=PLOh6mlSStDuS6EGwOA6j-RvtJHFoPs_Yf&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </details>
-            <details open class="replayContainer">
-                <summary>4th Reg TurkeyBowl by DJ Schmitty | 10/18/2024</summary>
-                <div>
+            <hr>
+            <details open>
+                <summary id="10/18/2024_1" class="replayTitle">4th Reg TurkeyBowl by DJ Schmitty | 10/18/2024</summary>
+                <div class="replayContainer">
                     <div class="none service shown">
-                        <p class="explainer">Please select a music provider</p>
+                        <h3 class="explainer">Please <a href="#selectService">select a music provider</a></h3>
                     </div>
                     <div class="tidal loading">
-                        <p class="explainer">Tidal is loading...</p>
+                        <h3 class="explainer">Tidal is loading...</h3>
                     </div>
                     <div class="spotify loading">
-                        <p class="explainer">Spotify is loading...</p>
+                        <h3 class="explainer">Spotify is loading...</h3>
                     </div>
                     <div class="youtube loading">
-                        <p class="explainer">YouTube is loading...</p>
+                        <h3 class="explainer">YouTube is loading...</h3>
                     </div>
                     <div class="youtubeMusic loading">
-                        <p class="explainer">YouTube Music is loading...</p>
+                        <h3 class="explainer">YouTube Music is loading...</h3>
                     </div>
                     <iframe class="tidal service" src="https://embed.tidal.com/playlists/1f70effb-d141-4b51-99e7-9f6ee72e7ea5" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
                     <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/1UsxpwlNuJeESEds0a5HA0?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -87,20 +105,24 @@
                     <iframe class="youtubeMusic service" src="https://www.youtube.com/embed/videoseries?si=XfTiubVfpGRfHR17&amp;list=PLOh6mlSStDuRSlqQGKQoNsBFAYROWSjsm&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </details>
-            <details class="replayContainer">
-                <summary>Placeholder (for more events!)</summary>
-                <div>
+            <hr>
+            <details>
+                <summary id="mm/dd/yyyy_#" class="replayTitle">Placeholder (for more events!)</summary>
+                <div class="replayContainer">
                     <div class="none service shown">
-                        <p class="explainer">Please select a music provider</p>
+                        <h3 class="explainer">Please <a href="#selectService">select a music provider</a></h3>
                     </div>
                     <div class="tidal loading">
-                        <p class="explainer">Tidal is loading...</p>
+                        <h3 class="explainer">Tidal is loading...</h3>
                     </div>
                     <div class="spotify loading">
-                        <p class="explainer">Spotify is loading...</p>
+                        <h3 class="explainer">Spotify is loading...</h3>
                     </div>
                     <div class="youtube loading">
-                        <p class="explainer">YouTube is loading...</p>
+                        <h3 class="explainer">YouTube is loading...</h3>
+                    </div>
+                    <div class="youtubeMusic loading">
+                        <h3 class="explainer">YouTube Music is loading...</h3>
                     </div>
                     <iframe class="tidal service" src="https://embed.tidal.com/playlists/be2d86d1-7a61-42f9-b810-c81cccfa5fc7" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe>
                     <iframe class="spotify service" src="https://open.spotify.com/embed/playlist/3CIaXocK1CC236bd4rh1Kk?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
