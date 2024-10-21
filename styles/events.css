@@ -64,6 +64,11 @@ button {
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+    cursor: pointer;
+}
+.replayTitle:hover {
+    color: #D3BC8D;
+    text-decoration: underline;
 }
 .replayContainer {
     position: relative;
@@ -86,6 +91,10 @@ button {
     padding: 8px;
     border-radius: 32px;
     transition: background-color 0.3s;
+    cursor: pointer;
+}
+.radioLabel:hover {
+    background-color: #ddd;
 }
 input[type="radio"] {
     display: none;
@@ -105,4 +114,20 @@ input[type="radio"]:checked + .radioLabel {
 .radioLabel[for="youtube"],
 .radioLabel[for="youtubeMusic"] {
     color: #F00;
+}
+summary.replayTitle {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+    cursor: pointer;
+}
+summary.replayTitle::before {
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+    content: '+';
+}
+details[open] summary.replayTitle::before {
+    transform: rotate(180deg);
+    content: '−';
 }

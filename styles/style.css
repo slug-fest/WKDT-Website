@@ -22,6 +22,15 @@ a {
 a:hover {
     color: #D3BC8D;
 }
+.button {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    color: initial;
+    background-color: white;
+    border: 2px solid grey;
+}
 hr {
     background-color: #D3BC8D;
     opacity: 1;
@@ -231,6 +240,7 @@ header {
     margin: 1.5rem 0;
 }
 .bigImageButton:hover {
+    color: initial;
     background-color: white;
     border: 2px solid grey;
 }
