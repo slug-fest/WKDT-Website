@@ -1,3 +1,6 @@
+.fullWidth {
+    width: 100%
+}
 .none {
     display: none;
     border: 2px solid;
@@ -68,7 +71,6 @@ button {
 }
 .replayTitle:hover {
     color: #D3BC8D;
-    text-decoration: underline;
 }
 .replayContainer {
     position: relative;

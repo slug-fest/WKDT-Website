@@ -78,10 +78,10 @@ padding-left: 0;
 .cld-title{
   display: block;
   margin: 0.1vw;
-  padding: 0.1vw;
   font-weight: normal;
   font-size: min(1vw, 100%);
   background-color: #D3BC8D;
+  border-radius: 0.25vw;
 }
 .cld-day:hover{
   background: #eee;
@@ -95,8 +95,10 @@ padding-left: 0;
 summary.eventTitle {
   list-style: none;
   position: relative;
+  padding: 0.1vw;
   padding-left: 1.5em;
   cursor: pointer;
+  border-radius: 0.25vw;
 }
 summary.eventTitle::before {
   position: absolute;
@@ -117,4 +119,7 @@ summary.eventTitle.bx::before {
 }
 details[open] summary.eventTitle::before {
   transform: rotate(450deg);
+}
+.eventDetails {
+  padding: 0.1vw;
 }

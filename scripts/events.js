@@ -12,6 +12,11 @@ function changeService(choice) {
     document.querySelectorAll(".topEvent").forEach(element => {
         element.open = true;
     });
+    if (choice===".none") {
+        document.querySelectorAll("details").forEach(element => {
+            element.open = false;
+        });
+    }
 }
 function loadCal() {
     document.getElementById('loadCalButton').classList.add("hidden");
