@@ -133,10 +133,10 @@ function createCalendar(calendar, element, adjuster){
             rwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(0,0,0,0.5)"><polyline points="0,50 75,0 75,100"></polyline></svg>';
             datetime.appendChild(rwd);
         }
-        var today = document.createElement('div');
-        today.className += ' today';
-        today.innerHTML = months[calendar.Selected.Month] + ", " + calendar.Selected.Year;
-        datetime.appendChild(today);
+        var indicator = document.createElement('div');
+        indicator.id = 'indicator';
+        indicator.innerHTML = months[calendar.Selected.Month] + ", " + calendar.Selected.Year;
+        datetime.appendChild(indicator);
         if(calendar.Options.NavShow && !calendar.Options.NavVertical){
             var fwd = document.createElement('div');
             fwd.className += " cld-fwd cld-nav";
@@ -179,12 +179,12 @@ function createCalendar(calendar, element, adjuster){
             return container;
         }
 
-        var days = document.createElement('ul');
-        days.className += "cld-days";
+        var days = document.createElement('div');
+        days.id = "cld-days";
 
         // Previous Month's Days
         for (var i = 0; i < (calendar.Selected.FirstDay); i++) {
-            var day = document.createElement('li');
+            var day = document.createElement('div');
             day.className += "cld-day prevMonth";
 
             // Disabled Days
@@ -201,7 +201,7 @@ function createCalendar(calendar, element, adjuster){
 
         // Current Month's Days
         for (var i = 0; i < calendar.Selected.Days; i++) {
-            var day = document.createElement('li');
+            var day = document.createElement('div');
             day.className += "cld-day currMonth";
 
             // Disabled Days
@@ -240,7 +240,7 @@ function createCalendar(calendar, element, adjuster){
 
             // If Today..
             if ((i + 1) == calendar.Today.getDate() && calendar.Selected.Month == calendar.Today.Month && calendar.Selected.Year == calendar.Today.Year) {
-                day.className += " today";
+                day.id="today";
             }
             days.appendChild(day);
         }
@@ -254,7 +254,7 @@ function createCalendar(calendar, element, adjuster){
             extraDays = 20;
         }
         for (var i = 0; i < (extraDays - calendar.Selected.LastDay); i++) {
-            var day = document.createElement('li');
+            var day = document.createElement('div');
             day.className += "cld-day nextMonth";
 
             // Disabled Days
@@ -292,12 +292,26 @@ function caleandar(el, data, settings){
     var obj = new Calendar(data, settings);
     createCalendar(obj, el);
 }
-function expandEvent(n) {
-    console.log('event'+n);
-    document.getElementById('event'+n).classList.toggle("shown");
-    document.getElementById('event'+n+'title').classList.toggle("hidden");
+function scrollElementIntoContainerView() {
+    const container = document.getElementById('cld-days');
+    const element = document.getElementById('today');
+
+    if (window.innerWidth < 1024 && container && element) {
+        // Calculate the difference between element's top and container's top
+        const containerRect = container.getBoundingClientRect();
+        const elementRect = element.getBoundingClientRect();
+        const offset = elementRect.top - containerRect.top;
+
+        // Scroll the container to bring the element into view
+        container.scrollTo({
+            top: container.scrollTop + offset,
+            behavior: 'instant'
+        });
+    }
 }
+window.addEventListener('resize', scrollElementIntoContainerView);
 document.addEventListener('DOMContentLoaded', function() {
+    scrollElementIntoContainerView();
     document.querySelectorAll('.cld-event').forEach(container => {
         container.addEventListener('wheel', function(event) {
             if (container.scrollHeight > container.clientHeight) {

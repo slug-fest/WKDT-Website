@@ -78,12 +78,12 @@ button {
     height: 75vh;
 }
 
-.radio-group {
+.radioGroup {
     display: flex;
     justify-content: center;
     padding: 3px;
     background-color: #eee;
-    border-radius: 32px;
+    border-radius: 20px;
 }
 .radioLabel {
     display: flex;
@@ -91,7 +91,7 @@ button {
     justify-content: center;
     width: 20%;
     padding: 8px;
-    border-radius: 32px;
+    border-radius: 20px;
     transition: background-color 0.3s;
     cursor: pointer;
 }
@@ -132,4 +132,12 @@ summary.replayTitle::before {
 details[open] summary.replayTitle::before {
     transform: rotate(180deg);
     content: '−';
+}
+@media (max-width: 1024px) {
+    .radioGroup {
+        flex-wrap: wrap;
+    }
+    .radioLabel {
+        width: 100%;
+    }
 }

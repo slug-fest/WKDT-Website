@@ -9,7 +9,7 @@
   margin: auto;
   overflow: hidden;
 }
-.cld-datetime .today{
+#indicator{
   position: relative;
   float: left;
   width: calc(100% - 40px);
@@ -37,19 +37,18 @@
 .cld-nav svg:hover{
   fill: #D3BC8D;
 }
-.cld-labels, .cld-days{
-padding-left: 0;
+.cld-labels, #cld-days{
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 .cld-label, .cld-day{
   box-sizing: border-box;
   display: inline-block;
-  width: 14.28%;
   text-align: center;
 }
 .cld-day{
-  display: block;
-  float: left;
-  position: relative;
+  /*DO NOT USE GAP - the height of gaps does not get taken into account by chromium.*/
   margin: 0;
   padding: 5px;
   height: 10vh;
@@ -58,7 +57,7 @@ padding-left: 0;
 .cld-day.clickable:hover{
   cursor: pointer;
 }
-.cld-day.today{
+#today{
   border: 2px solid #D3BC8D;
 }
 .cld-day.disableDay{
@@ -79,9 +78,9 @@ padding-left: 0;
   display: block;
   margin: 0.1vw;
   font-weight: normal;
-  font-size: min(1vw, 100%);
+  font-size: min(1vw, 100%, 1vh);
   background-color: #D3BC8D;
-  border-radius: 0.25vw;
+  border-radius: 5px;
 }
 .cld-day:hover{
   background: #eee;
@@ -92,13 +91,33 @@ padding-left: 0;
 .cld-number.eventday:hover{
   background: #eee;
 }
+@media (max-width: 1024px) {
+  .cld-labels, .prevMonth, .nextMonth {
+    display: none;
+  }
+  #cld-days {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: auto;
+    height: 60vh;
+  }
+  .cld-day {
+    min-height: 10vh;
+    height: max-content;
+  }
+  .cld-title {
+    font-size: initial;
+  }
+  .cld-event {
+    height: auto;
+  }
+}
 summary.eventTitle {
   list-style: none;
   position: relative;
   padding: 0.1vw;
   padding-left: 1.5em;
   cursor: pointer;
-  border-radius: 0.25vw;
+  border-radius: 5px;
 }
 summary.eventTitle::before {
   position: absolute;
