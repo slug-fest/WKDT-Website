@@ -1,4 +1,38 @@
-// Calendar till 121
+function loadAll() {
+    //mm,dd,yyyy,start,end,type,title,description,[dj,Tidal,Spotify,YouTube,YoutubeMusic]
+    const eventmatrix = `11,02,2024,12:00 PM,16:00,fb,USAFA @ USMA,Broadcast live coverage of Army football
+    11,01,2024,19:45,21:00,dj,2nd Reg Strikefest,Provide DJ support for 2nd Reg Strikefest
+    11,01,2024,17:30,21:00,bx,USAFA @ USMA,Provide walk-on music for Army Boxing
+    10,31,2024,17:50,20:00,dj,1st Reg Halloween,Provide DJ support for 1st Reg Halloween BBQ
+    10,31,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
+    10,30,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
+    10,25,2024,16:30,20:30,dj,Brigade Sandhurst,Provide DJ support for Brigade Sandhurst Combatives
+    10,19,2024,12:00,16:00,fb,ECU @ USMA,Broadcast live coverage of Army football (Homecoming Game)
+    10,18,2024,18:00,20:30,dj,2nd Reg BBQ,Provide DJ support for 2nd Reg BBQ,Coop,bd638bfc-4709-4b7c-a150-41d60bd2ad1f,1vTWO8lt05Sq543ZRbwXT1,videoseries?si=lvVWo8AaBOMnY76F&list=PLOh6mlSStDuQ8rXuQIKYg2Jpw98qYJfI9,videoseries?si=pMeUK0dq9LNL4q-w&list=PLOh6mlSStDuS6EGwOA6j-RvtJHFoPs_Yf
+    10,18,2024,17:00,19:30,dj,4th Reg TurkeyBowl,Provide DJ support for 4th Reg TurkeyBowl,Schmitty,1f70effb-d141-4b51-99e7-9f6ee72e7ea5,1UsxpwlNuJeESEds0a5HA0,videoseries?si=2-mq5dK1EiHqWBut&list=PLOh6mlSStDuTCV3DeStLJrqiQKfAFEzBR,videoseries?si=XfTiubVfpGRfHR17&list=PLOh6mlSStDuRSlqQGKQoNsBFAYROWSjsm
+    10,17,2024,16:30,18:30,pa,Drill Support,Provide audio system for full brigade drill practice
+    10,16,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
+    10,15,2024,16:30,18:30,pa,Drill Support,Provide audio system for 3rd/4th drill practice
+    10,12,2024,12:00,16:00,fb,UAB @ USMA,Broadcast live coverage of Army football
+    10,10,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
+    10,08,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice`;
+    document.getElementById('loadCalButton').classList.add("hidden");
+    if (document.getElementById('calendar').children.length===0) {
+        var element = document.getElementById('calendar');
+        caleandar(element, eventmatrix);
+    }
+    const events = eventmatrix.split('\n');
+    let x=0;
+    events.forEach(event => {
+        x+=1;
+        const data = event.split(',');
+        data[0]=data[0].trim();
+        if ((data[5]==="dj"||data[5]==="bx")&&data[8]) {
+            document.getElementById("eventReplays").innerHTML+=`<hr class="fullWidth"><details class="eventReplay"><summary id="${data[0]}/${data[1]}/${data[2]}_${x}" class="replayTitle">${data[6]} by DJ ${data[8]} | ${data[0]}/${data[1]}/${data[2]}</summary><div class="replayContainer"><div class="none service shown"><h3 class="explainer">Please select a music provider from the <a href="#selectService">list</a> above.</h3></div><div class="tidal loading"><h3 class="explainer">Tidal is loading...</h3></div><div class="spotify loading"><h3 class="explainer">Spotify is loading...</h3></div><div class="youtube loading"><h3 class="explainer">YouTube is loading...</h3></div><div class="youtubeMusic loading"><h3 class="explainer">YouTube Music is loading...</h3></div><iframe class="tidal service" src="https://embed.tidal.com/playlists/${data[9]}" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe><iframe class="spotify service" src="https://open.spotify.com/embed/playlist/${data[10]}?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><iframe class="youtube service" src="https://www.youtube.com/embed/${data[11]}&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="youtubeMusic service" src="https://www.youtube.com/embed/${data[12]}&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></details>`;
+        }
+    });
+    document.querySelectorAll(".eventReplay")[0].classList.add("topEvent");
+}
 class Calendar {
     constructor(model, date) {
         this.Model = model || {}; // This will be an array of events
@@ -21,7 +55,7 @@ class Calendar {
             return event.Date.getDate() === day &&
             event.Date.getMonth() === this.Selected.Month &&
             event.Date.getFullYear() === this.Selected.Year;
-        });
+        }).reverse();  // This will reverse the order of the events
     }
 }
 function createCalendar(calendar, element, adjuster) {
@@ -117,15 +151,11 @@ function createCalendar(calendar, element, adjuster) {
 function parseEventMatrix(eventmatrix) {
     return eventmatrix.split('\n').map(event => {
         const [month, day, year, startTime, endTime, type, title, description] = event.split(',');
-        const parseTime = time => {
-            const [hour, minute] = time.replace(' PM', '').replace(' AM', '').split(':');
-            return time.includes('PM') && hour < 12 ? `${parseInt(hour) + 12}:${minute}` : `${hour}:${minute}`;
-        };
         const eventData = {
             Date: new Date(year, month - 1, day),
             Title: title,
-            Time: parseTime(startTime),
-            T_end: parseTime(endTime),
+            Time: startTime,
+            T_end: endTime,
             Type: type,
             Description: description
         };
@@ -136,41 +166,6 @@ function caleandar(el, eventmatrix) {
     const eventData = parseEventMatrix(eventmatrix);
     const calendar = new Calendar(eventData);
     createCalendar(calendar, el);
-}
-function loadAll() {
-    //mm,dd,yyyy,start,end,type,title,description,[dj,Tidal,Spotify,YouTube,YoutubeMusic]
-    const eventmatrix = `11,02,2024,12:00 PM,16:00,fb,USAFA @ USMA,Broadcast live coverage of Army football
-    11,01,2024,19:45,21:00,dj,2nd Reg Strikefest,Provide DJ support for 2nd Reg Strikefest
-    11,01,2024,17:30,21:00,bx,USAFA @ USMA,Provide walk-on music for Army Boxing
-    10,31,2024,17:50,20:00,dj,1st Reg Halloween,Provide DJ support for 1st Reg Halloween BBQ
-    10,31,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
-    10,30,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
-    10,25,2024,16:30,20:30,dj,Brigade Sandhurst,Provide DJ support for Brigade Sandhurst Combatives
-    10,19,2024,12:00,16:00,fb,ECU @ USMA,Broadcast live coverage of Army football (Homecoming Game)
-    10,18,2024,18:00,20:30,dj,2nd Reg BBQ,Provide DJ support for 2nd Reg BBQ,Coop,bd638bfc-4709-4b7c-a150-41d60bd2ad1f,1vTWO8lt05Sq543ZRbwXT1,videoseries?si=lvVWo8AaBOMnY76F&list=PLOh6mlSStDuQ8rXuQIKYg2Jpw98qYJfI9,videoseries?si=pMeUK0dq9LNL4q-w&list=PLOh6mlSStDuS6EGwOA6j-RvtJHFoPs_Yf
-    10,18,2024,17:00,19:30,dj,4th Reg TurkeyBowl,Provide DJ support for 4th Reg TurkeyBowl,Schmitty,1f70effb-d141-4b51-99e7-9f6ee72e7ea5,1UsxpwlNuJeESEds0a5HA0,videoseries?si=2-mq5dK1EiHqWBut&list=PLOh6mlSStDuTCV3DeStLJrqiQKfAFEzBR,videoseries?si=XfTiubVfpGRfHR17&list=PLOh6mlSStDuRSlqQGKQoNsBFAYROWSjsm
-    10,17,2024,16:30,18:30,pa,Drill Support,Provide audio system for full brigade drill practice
-    10,16,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
-    10,15,2024,16:30,18:30,pa,Drill Support,Provide audio system for 3rd/4th drill practice
-    10,12,2024,12:00,16:00,fb,UAB @ USMA,Broadcast live coverage of Army football
-    10,10,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
-    10,08,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice`;
-    document.getElementById('loadCalButton').classList.add("hidden");
-    if (document.getElementById('calendar').children.length===0) {
-        var element = document.getElementById('calendar');
-        caleandar(element, eventmatrix);
-    }
-    const events = eventmatrix.split('\n');
-    let x=0;
-    events.forEach(event => {
-        x+=1;
-        const data = event.split(',');
-        data[0]=data[0].trim();
-        if ((data[5]==="dj"||data[5]==="bx")&&data[8]) {
-            document.getElementById("eventReplays").innerHTML+=`<hr class="fullWidth"><details class="eventReplay"><summary id="${data[0]}/${data[1]}/${data[2]}_${x}" class="replayTitle">${data[6]} by DJ ${data[8]} | ${data[0]}/${data[1]}/${data[2]}</summary><div class="replayContainer"><div class="none service shown"><h3 class="explainer">Please select a music provider from the <a href="#selectService">list</a> above.</h3></div><div class="tidal loading"><h3 class="explainer">Tidal is loading...</h3></div><div class="spotify loading"><h3 class="explainer">Spotify is loading...</h3></div><div class="youtube loading"><h3 class="explainer">YouTube is loading...</h3></div><div class="youtubeMusic loading"><h3 class="explainer">YouTube Music is loading...</h3></div><iframe class="tidal service" src="https://embed.tidal.com/playlists/${data[9]}" title="TIDAL Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" ></iframe><iframe class="spotify service" src="https://open.spotify.com/embed/playlist/${data[10]}?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><iframe class="youtube service" src="https://www.youtube.com/embed/${data[11]}&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe class="youtubeMusic service" src="https://www.youtube.com/embed/${data[12]}&amp;rel=0" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></details>`;
-        }
-    });
-    document.querySelectorAll(".eventReplay")[0].classList.add("topEvent");
 }
 // document.querySelectorAll(".link").forEach(element => {
 //     element.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" height=".9em" viewBox="0 0 36 36"><path fill="#000" d="M15 9l6-6s6-6 12 0 0 12 0 12l-8 8s-6 6-12 0c-1.125-1.125-1.822-2.62-1.822-2.62l3.353-3.348S14.396 18.396 16 20c0 0 3 3 6 0l8-8s3-3 0-6-6 0-6 0l-3.729 3.729s-1.854-1.521-5.646-.354L15 9z"/><path fill="#000" d="M20.845 27l-6 6s-6 6-12 0 0-12 0-12l8-8s6-6 12 0c1.125 1.125 1.822 2.62 1.822 2.62l-3.354 3.349s.135-1.365-1.469-2.969c0 0-3-3-6 0l-8 8s-3 3 0 6 6 0 6 0l3.729-3.729s1.854 1.521 5.646.354l-.374.375z"/></svg>';
