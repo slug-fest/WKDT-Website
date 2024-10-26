@@ -1,12 +1,13 @@
 function loadAll() {
     //mm,dd,yyyy,start,end,type,title,description,[dj,Tidal,Spotify,YouTube,YoutubeMusic]
-    const eventmatrix = `11,02,2024,12:00 PM,16:00,fb,USAFA @ USMA,Broadcast live coverage of Army football
+    const eventmatrix = `11,05,2024,16:20,19:30,dj,Company Athletics Brigade Finals,Provide audio system and DJ support for Company Athletics Brigade Finals
+    11,02,2024,12:00,16:00,fb,USAFA @ USMA,Broadcast live coverage of Army football
     11,01,2024,19:45,21:00,dj,2nd Reg Strikefest,Provide DJ support for 2nd Reg Strikefest
     11,01,2024,17:30,21:00,bx,USAFA @ USMA,Provide walk-on music for Army Boxing
     10,31,2024,17:50,20:00,dj,1st Reg Halloween,Provide DJ support for 1st Reg Halloween BBQ
     10,31,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
     10,30,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
-    10,25,2024,16:30,20:30,dj,Brigade Sandhurst,Provide DJ support for Brigade Sandhurst Combatives
+    10,25,2024,16:30,20:30,dj,Brigade Sandhurst Combatives Competition,Provide DJ support for Brigade Sandhurst Combatives Competition,Knuckles,4c294755-2493-488f-bc4d-a857c12f5281,5720b5UcDp4PiCmPOEplll,videoseries?si=TEKSO5OukcyYF5wh&amp;list=PLOh6mlSStDuRnCuSS5o0ba3vKAuGGcTt2,videoseries?si=doVZ2z6NqeqP3x1A&amp;list=PLOh6mlSStDuT8SMvAkXUeIm7U_yL3tgU-
     10,19,2024,12:00,16:00,fb,ECU @ USMA,Broadcast live coverage of Army football (Homecoming Game)
     10,18,2024,18:00,20:30,dj,2nd Reg BBQ,Provide DJ support for 2nd Reg BBQ,Coop,bd638bfc-4709-4b7c-a150-41d60bd2ad1f,1vTWO8lt05Sq543ZRbwXT1,videoseries?si=lvVWo8AaBOMnY76F&list=PLOh6mlSStDuQ8rXuQIKYg2Jpw98qYJfI9,videoseries?si=pMeUK0dq9LNL4q-w&list=PLOh6mlSStDuS6EGwOA6j-RvtJHFoPs_Yf
     10,18,2024,17:00,19:30,dj,4th Reg TurkeyBowl,Provide DJ support for 4th Reg TurkeyBowl,Schmitty,1f70effb-d141-4b51-99e7-9f6ee72e7ea5,1UsxpwlNuJeESEds0a5HA0,videoseries?si=2-mq5dK1EiHqWBut&list=PLOh6mlSStDuTCV3DeStLJrqiQKfAFEzBR,videoseries?si=XfTiubVfpGRfHR17&list=PLOh6mlSStDuRSlqQGKQoNsBFAYROWSjsm

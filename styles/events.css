@@ -52,11 +52,9 @@ button {
     border: 0;
 }
 #calendarContainer {
-    margin: 5vh 10vw;
     height: 70vh;
 }
 #eventReplays {
-    margin: 5vh 10vw;
     box-sizing: border-box;
 }
 .replayTitle {

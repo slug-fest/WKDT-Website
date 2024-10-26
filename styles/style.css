@@ -190,14 +190,9 @@ header {
         display: initial;
     }
 }
-#content {
-    position: relative;
-    background-color: black;
-    color: white;
-}
 .bigImageContainer {
     position: relative;
-    display: inline-block;
+    background-color: black;
     width: 100%;
 }
 .bigImage {
@@ -213,6 +208,7 @@ header {
 }
 .bigImageOverlayContainer {
     padding: 1.5rem;
+    color: white;
 }
 .bigImageHeader {
     font-size: 2.8rem;
@@ -251,6 +247,17 @@ header {
     .bigImageHeader, .bigImageText{
         width: 100%;
     }
+}
+section {
+    margin: 5vh 10vw;
+}
+#stats {
+    display: grid;
+    margin: 2%;
+    grid-template-columns: repeat(5, auto);
+}
+.stat {
+
 }
 footer {
     background-color: black;
