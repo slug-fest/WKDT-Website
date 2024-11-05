@@ -254,7 +254,17 @@ section {
 #stats {
     display: grid;
     margin: 2%;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5,auto);
+}
+.twoHalves {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.half {
+    width: auto;
+}
+.imghalf {
+    width: auto;
 }
 footer {
     background-color: black;

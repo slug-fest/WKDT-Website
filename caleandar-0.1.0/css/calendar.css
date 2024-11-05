@@ -45,6 +45,8 @@
 .cld-label, .cld-day{
   box-sizing: border-box;
   display: inline-block;
+}
+.cld-label {
   text-align: center;
 }
 .cld-day{
