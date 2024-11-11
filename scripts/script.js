@@ -9,19 +9,24 @@ fetch('footer.html')
         document.getElementById('footer').innerHTML = data;
 });
 window.onscroll = function() {
-    shrinkHeader();
+    checkHeader();
 };
-function shrinkHeader() {
-    const headImage = document.getElementsByClassName("headImage")[0];
-    const parentImage = document.getElementsByClassName("parentImage")[0];
+function checkHeader() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        headImage.classList.add("shrink");
-        parentImage.classList.add("shrink");
+        shrinkHeader();
     } else {
-        headImage.classList.remove("shrink");
-        parentImage.classList.remove("shrink");
+        growHeader();
     }
+}
+function shrinkHeader() {
+    document.getElementsByClassName("headImage")[0].classList.add("shrink");
+    document.getElementsByClassName("parentImage")[0].classList.add("shrink");
+}
+function growHeader() {
+    document.getElementsByClassName("headImage")[0].classList.remove("shrink");
+    document.getElementsByClassName("parentImage")[0].classList.remove("shrink");
 }
 function dropdown() {
     document.getElementsByClassName("nav-menu")[0].classList.toggle("dropdown");
+    shrinkHeader();
 }

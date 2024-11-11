@@ -1,10 +1,10 @@
 function loadAll() {
     //mm,dd,yyyy,start,end,type,title,description,[dj,Tidal,Spotify,YouTube,YoutubeMusic]
-    const eventmatrix = `11,05,2024,16:20,19:30,dj,Company Athletics Brigade Finals,Provide audio system and DJ support for Company Athletics Brigade Finals
+    const eventmatrix = `11,05,2024,16:20,19:30,dj,Company Athletics Brigade Finals,Provide audio system and DJ support for Company Athletics Brigade Finals,Edox,
     11,02,2024,12:00,16:00,dj,Texas Tamale Tailgate,Provide DJ support for West Point Parents' Club of Houston Tailgate,Demize,7f1d97ed-fad0-47b8-8d84-1781e6d3e374,68McwWRWvwZ5lWrz5x1L97,videoseries?si=w2BdHKteVcOAmGgQ&amp;list=PLOh6mlSStDuTnux_naBM_ft5WFVRREr86,videoseries?si=8F_QOYXpZc3pbhit&amp;list=PLOh6mlSStDuRXSG7U-ij_ZdIro2N-8N7M
     11,02,2024,12:00,16:00,fb,USAFA @ USMA,Broadcast live coverage of Army football
-    11,01,2024,17:50,20:00,dj,1st Reg Halloween,Provide DJ support for 1st Reg Halloween BBQ,Sototo,5450aff9-93ab-47b8-afec-9081ff960d91,7cfrWd1sUhXPp4Pow24UMf,videoseries?si=ftZ1C6B3N-DWZo0c&amp;list=PLOh6mlSStDuRYuPg2DbPBhoLqJj7Yz9pW,videoseries?si=aYm6Y1qNuVUixlj3&amp;list=PLOh6mlSStDuR5uaITv-g9dHYjjvlpPO3K
-    11,01,2024,17:30,21:00,bx,USAFA @ USMA,Provide walk-on music for Army Boxing,Demize,2e1c1d03-f204-450c-ac40-e0535ae49ea9,2Tp4L4WIWRSXdvncVd44DL,videoseries?si=23bmc7JmFrWWfKkH&amp;list=PLOh6mlSStDuRVboSuvF3Kquh5xrs1zLeL,videoseries?si=9GjecAv4GJNNMkS0&amp;list=PLOh6mlSStDuRCoOYHL0M0nepVIA5-tAld
+    11,01,2024,17:50,20:00,dj,1st Reg Halloween,Provide DJ support for 1st Reg Halloween BBQ,Edox,5450aff9-93ab-47b8-afec-9081ff960d91,7cfrWd1sUhXPp4Pow24UMf,videoseries?si=ftZ1C6B3N-DWZo0c&amp;list=PLOh6mlSStDuRYuPg2DbPBhoLqJj7Yz9pW,videoseries?si=aYm6Y1qNuVUixlj3&amp;list=PLOh6mlSStDuR5uaITv-g9dHYjjvlpPO3K
+    11,01,2024,17:30,21:00,bx,USAFA @ USMA Boxing,Provide walk-on music for Army Boxing,Demize,2e1c1d03-f204-450c-ac40-e0535ae49ea9,2Tp4L4WIWRSXdvncVd44DL,videoseries?si=23bmc7JmFrWWfKkH&amp;list=PLOh6mlSStDuRVboSuvF3Kquh5xrs1zLeL,videoseries?si=9GjecAv4GJNNMkS0&amp;list=PLOh6mlSStDuRCoOYHL0M0nepVIA5-tAld
     10,31,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
     10,29,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
     10,25,2024,16:30,20:30,dj,Brigade Sandhurst Combatives Competition,Provide DJ support for Brigade Sandhurst Combatives Competition,Knuckles,4c294755-2493-488f-bc4d-a857c12f5281,5720b5UcDp4PiCmPOEplll,videoseries?si=TEKSO5OukcyYF5wh&amp;list=PLOh6mlSStDuRnCuSS5o0ba3vKAuGGcTt2,videoseries?si=doVZ2z6NqeqP3x1A&amp;list=PLOh6mlSStDuT8SMvAkXUeIm7U_yL3tgU-
