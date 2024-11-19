@@ -246,6 +246,9 @@ header {
     border: 2px solid grey;
 }
 @media (max-width: 1024px) {
+    .bigImageContainer {
+        height: initial;
+    }
     .bigImageOverlay {
         position: initial;
     }
