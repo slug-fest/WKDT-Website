@@ -80,7 +80,7 @@
   display: block;
   margin: 0.1vw;
   font-weight: normal;
-  font-size: min(1vw, 100%, 1vh);
+  font-size: min(0.7vw, 100%);
   background-color: #D3BC8D;
   border-radius: 5px;
 }
