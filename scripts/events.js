@@ -5,7 +5,7 @@ function loadAll() {
     12,11,2024,18:00,19:30,dj,Goat/Engineer Game,Provide DJ support for the Goat/Engineer Game
     12,06,2024,20:00,23:00,fb,Tulane @ USMA,Broadcast live coverage of Army football
     12,04,2024,20:00,22:00,dj,Branch Night (2/2),Provide DJ support for Branch Night,Demize,69f6c7c7-7e35-4f82-a407-ba0733de9218,2tLMzmvhDiN7vulipavyUW,videoseries?si=vu74IfpLkdGauaOt&amp;list=PLOh6mlSStDuTGrPeTpGaz3A9KODENlKjJ,videoseries?si=LOfNRe_upcvq4qJz&amp;list=PLOh6mlSStDuTCywOAnHQBhKrKGqbtAT44
-    12,04,2024,18:00,20:00,dj,Branch Night (1/2),Provide DJ support for Branch Night,Dom,acd6bbf9-eccd-49ee-acce-bb54c2fdd265,13b9DH9Id1Qy9C7Nub0kvW,videoseries?si=_3wwdA0u1jMwdiNf&amp;list=PLOh6mlSStDuR8oqHuiQq-zk7_L_wenqt7,videoseries?si=b7LKuwVKwe_8PAQS&amp;list=PLOh6mlSStDuRWY94PlwHpDYsswbga2Z5e
+    12,04,2024,18:00,20:00,dj,Branch Night (1/2),Provide DJ support for Branch Night,Blue Hildreth,acd6bbf9-eccd-49ee-acce-bb54c2fdd265,13b9DH9Id1Qy9C7Nub0kvW,videoseries?si=_3wwdA0u1jMwdiNf&amp;list=PLOh6mlSStDuR8oqHuiQq-zk7_L_wenqt7,videoseries?si=b7LKuwVKwe_8PAQS&amp;list=PLOh6mlSStDuRWY94PlwHpDYsswbga2Z5e
     11,30,2024,12:00,16:00,fb,UTSA @ USMA,No coverage due to Thanksgiving leave
     11,28,2024,12:00,12:00,pa,Thanksgiving,Happy Thanksgiving!
     11,23,2024,12:00,16:00,fb,Notre Dame @ USMA,No coverage due to Yankee Stadium
