@@ -53,7 +53,7 @@
   /*DO NOT USE GAP - the height of gaps does not get taken into account by chromium.*/
   margin: 0;
   padding: 5px;
-  height: 10vh;
+  height: 12vh;
   border: 1px solid #ddd;
 }
 .cld-day.clickable:hover{
