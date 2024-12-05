@@ -1,13 +1,23 @@
 function loadAll() {
     //mm,dd,yyyy,start,end,type,title,description,[dj,Tidal,Spotify,YouTube,YoutubeMusic]
-    const eventmatrix = `11,05,2024,16:20,19:30,dj,Company Athletics Brigade Finals,Provide audio system and DJ support for Company Athletics Brigade Finals
+    const eventmatrix = `12,14,2024,15:00,19:00,fb,ARMY vs NAVY,No coverage due to lack of permission
+    12,11,2024,19:30,21:00,dj,Army/Navy Bonfire,Provide DJ support for the Army/Navy Bonfire
+    12,11,2024,18:00,19:30,dj,Goat/Engineer Game,Provide DJ support for the Goat/Engineer Game
+    12,06,2024,20:00,23:00,fb,Tulane @ USMA,Broadcast live coverage of Army football
+    12,04,2024,20:00,22:00,dj,Branch Night (2/2),Provide DJ support for Branch Night,Demize,69f6c7c7-7e35-4f82-a407-ba0733de9218,2tLMzmvhDiN7vulipavyUW,videoseries?si=vu74IfpLkdGauaOt&amp;list=PLOh6mlSStDuTGrPeTpGaz3A9KODENlKjJ,videoseries?si=LOfNRe_upcvq4qJz&amp;list=PLOh6mlSStDuTCywOAnHQBhKrKGqbtAT44
+    12,04,2024,18:00,20:00,dj,Branch Night (1/2),Provide DJ support for Branch Night,Dom,acd6bbf9-eccd-49ee-acce-bb54c2fdd265,13b9DH9Id1Qy9C7Nub0kvW,videoseries?si=_3wwdA0u1jMwdiNf&amp;list=PLOh6mlSStDuR8oqHuiQq-zk7_L_wenqt7,videoseries?si=b7LKuwVKwe_8PAQS&amp;list=PLOh6mlSStDuRWY94PlwHpDYsswbga2Z5e
+    11,30,2024,12:00,16:00,fb,UTSA @ USMA,No coverage due to Thanksgiving leave
+    11,28,2024,12:00,12:00,pa,Thanksgiving,Happy Thanksgiving!
+    11,23,2024,12:00,16:00,fb,Notre Dame @ USMA,No coverage due to Yankee Stadium
+    11,09,2024,12:00,16:00,fb,USMA @ North Texas,Broadcast live coverage of Army football
+    11,05,2024,16:20,19:30,dj,Company Athletics Brigade Finals,Provide audio system and DJ support for Company Athletics Brigade Finals
     11,02,2024,12:00,16:00,dj,Texas Tamale Tailgate,Provide DJ support for West Point Parents' Club of Houston Tailgate,Demize,7f1d97ed-fad0-47b8-8d84-1781e6d3e374,68McwWRWvwZ5lWrz5x1L97,videoseries?si=w2BdHKteVcOAmGgQ&amp;list=PLOh6mlSStDuTnux_naBM_ft5WFVRREr86,videoseries?si=8F_QOYXpZc3pbhit&amp;list=PLOh6mlSStDuRXSG7U-ij_ZdIro2N-8N7M
     11,02,2024,12:00,16:00,fb,USAFA @ USMA,Broadcast live coverage of Army football
     11,01,2024,17:50,20:00,dj,1st Reg Halloween,Provide DJ support for 1st Reg Halloween BBQ,Edox,5450aff9-93ab-47b8-afec-9081ff960d91,7cfrWd1sUhXPp4Pow24UMf,videoseries?si=ftZ1C6B3N-DWZo0c&amp;list=PLOh6mlSStDuRYuPg2DbPBhoLqJj7Yz9pW,videoseries?si=aYm6Y1qNuVUixlj3&amp;list=PLOh6mlSStDuR5uaITv-g9dHYjjvlpPO3K
     11,01,2024,17:30,21:00,bx,USAFA @ USMA Boxing,Provide walk-on music for Army Boxing,Demize,2e1c1d03-f204-450c-ac40-e0535ae49ea9,2Tp4L4WIWRSXdvncVd44DL,videoseries?si=23bmc7JmFrWWfKkH&amp;list=PLOh6mlSStDuRVboSuvF3Kquh5xrs1zLeL,videoseries?si=9GjecAv4GJNNMkS0&amp;list=PLOh6mlSStDuRCoOYHL0M0nepVIA5-tAld
     10,31,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
     10,29,2024,16:30,18:30,pa,Drill Support,Provide audio system for 1st/2nd drill practice
-    10,25,2024,16:30,20:30,dj,Brigade Sandhurst Combatives Competition,Provide DJ support for Brigade Sandhurst Combatives Competition,Knuckles,4c294755-2493-488f-bc4d-a857c12f5281,5720b5UcDp4PiCmPOEplll,videoseries?si=TEKSO5OukcyYF5wh&amp;list=PLOh6mlSStDuRnCuSS5o0ba3vKAuGGcTt2,videoseries?si=doVZ2z6NqeqP3x1A&amp;list=PLOh6mlSStDuT8SMvAkXUeIm7U_yL3tgU-
+    10,25,2024,16:30,20:30,dj,Brigade Sandhurst Combatives Competition,Provide DJ support for Brigade Sandhurst Combatives Competition,Demize,4c294755-2493-488f-bc4d-a857c12f5281,5720b5UcDp4PiCmPOEplll,videoseries?si=TEKSO5OukcyYF5wh&amp;list=PLOh6mlSStDuRnCuSS5o0ba3vKAuGGcTt2,videoseries?si=doVZ2z6NqeqP3x1A&amp;list=PLOh6mlSStDuT8SMvAkXUeIm7U_yL3tgU-
     10,19,2024,12:00,16:00,fb,ECU @ USMA,Broadcast live coverage of Army football (Homecoming Game)
     10,18,2024,18:00,20:30,dj,2nd Reg BBQ,Provide DJ support for 2nd Reg BBQ,Coop,bd638bfc-4709-4b7c-a150-41d60bd2ad1f,1vTWO8lt05Sq543ZRbwXT1,videoseries?si=lvVWo8AaBOMnY76F&list=PLOh6mlSStDuQ8rXuQIKYg2Jpw98qYJfI9,videoseries?si=pMeUK0dq9LNL4q-w&list=PLOh6mlSStDuS6EGwOA6j-RvtJHFoPs_Yf
     10,18,2024,17:00,19:30,dj,4th Reg TurkeyBowl,Provide DJ support for 4th Reg TurkeyBowl,Schmitty,1f70effb-d141-4b51-99e7-9f6ee72e7ea5,1UsxpwlNuJeESEds0a5HA0,videoseries?si=2-mq5dK1EiHqWBut&list=PLOh6mlSStDuTCV3DeStLJrqiQKfAFEzBR,videoseries?si=XfTiubVfpGRfHR17&list=PLOh6mlSStDuRSlqQGKQoNsBFAYROWSjsm
