@@ -196,13 +196,15 @@ header {
     position: relative;
     background-color: black;
     width: 100%;
-    height: 56.25vw;
+    max-height: 98vh;
+    overflow: hidden;
 }
 .bigImage {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .bigImageOverlay {
     position: absolute;
@@ -264,21 +266,25 @@ section {
     margin: 2%;
     grid-template-columns: repeat(5,auto);
 }
-.twoHalves {
-    display: flex;
-    align-items: flex-start;
+#donateText {
+    display: inline-block;
+    max-width: calc(100% - 411px);
 }
-.imgContainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 2%;
+#donateImg {
+    display: inline-block;
+    vertical-align: top;
+    width: 406px;
 }
-.imgHalf {
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+#donateImg:hover {
+    opacity: 50%;
+}
+@media (max-width: 1024px) {
+    #donateText {
+        max-width: 100%;
+    }
+    #donateImg {
+        max-width: 100%;
+    }
 }
 footer {
     background-color: black;
