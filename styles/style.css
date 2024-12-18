@@ -252,11 +252,13 @@ header {
     .bigImageContainer {
         height: initial;
     }
-    .bigImageOverlay {
-        position: initial;
-    }
     .bigImageHeader, .bigImageText{
         width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .bigImageOverlay {
+        position: initial;
     }
 }
 section {
