@@ -309,7 +309,14 @@ function changeService(choice) {
     }
 }
 // Listener based code
-window.onload = loadEvents;
+window.onload = function() {
+    loadEvents();
+    const eventRef = window.location.hash.substring(1);  // Extract the part after the '#' symbol
+    if (eventRef) {
+        // Show the overlay for the event corresponding to the eventRef
+        setTimeout(() => {showEventOverlay(eventRef);}, 1000);
+    }
+};
 window.addEventListener('resize', scrollElementIntoContainerView);
 document.addEventListener('DOMContentLoaded', () => {
     scrollElementIntoContainerView();
