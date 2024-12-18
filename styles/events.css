@@ -22,12 +22,14 @@
     background-color: #8005;
 }
 .service, .loading {
-    border-radius: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 75vh;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 12px;
 }
 .explainer {
     text-align: center;
@@ -35,7 +37,7 @@
     font-weight: bold;
 }
 .shown {
-    display: block !important;
+    display: flex !important;
 }
 .hidden {
     display: none;
@@ -54,15 +56,32 @@ button {
 #calendarContainer {
     height: 80vh;
 }
-#eventReplays {
+.replayContainer {
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+}
+.contentWrapper {
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    flex-grow: 0;
 }
 .replayTitle {
     font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
     cursor: pointer;
@@ -70,12 +89,33 @@ button {
 .replayTitle:hover {
     color: #D3BC8D;
 }
-.replayContainer {
+summary.replayTitle {
+    list-style: none;
     position: relative;
-    box-sizing: border-box;
-    height: 75vh;
+    padding-left: 1.5em;
+    cursor: pointer;
 }
-
+summary.replayTitle::before {
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+    content: '+';
+}
+details[open] summary.replayTitle::before {
+    transform: rotate(180deg);
+    content: '−';
+}
+.closeOverlay {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #555;
+    cursor: pointer;
+}
+.closeOverlay:hover {
+    color: #D3BC8D;
+}
 .radioGroup {
     display: flex;
     justify-content: center;
@@ -100,7 +140,7 @@ input[type="radio"] {
     display: none;
 }
 input[type="radio"]:checked + .radioLabel {
-    background-color: #ccc; /* Background color for the selected item */
+    background-color: #ccc;
 }
 .radioLabel[for="none"] {
     color: #555;
@@ -114,22 +154,6 @@ input[type="radio"]:checked + .radioLabel {
 .radioLabel[for="youtube"],
 .radioLabel[for="youtubeMusic"] {
     color: #F00;
-}
-summary.replayTitle {
-    list-style: none;
-    position: relative;
-    padding-left: 1.5em;
-    cursor: pointer;
-}
-summary.replayTitle::before {
-    position: absolute;
-    left: 0;
-    transition: transform 0.3s ease;
-    content: '+';
-}
-details[open] summary.replayTitle::before {
-    transform: rotate(180deg);
-    content: '−';
 }
 @media (max-width: 1024px) {
     .radioGroup {

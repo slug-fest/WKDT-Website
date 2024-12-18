@@ -24,28 +24,9 @@
         </div>
         <section id="calendarContainer">
             <h1>Event Calendar</h1>
-            <button onclick="loadCal()" id="loadCalButton">Load the calendar</button>
             <div id='calendar'></div>
         </section>
-        <section id="eventReplays">
-            <h1>Replays: Event Playlists</h1>
-            <div id="selectService" class="radioGroup">
-                <input type="radio" id="none" name="service" onClick="changeService('.none')" checked>
-                <label for="none" class="radioLabel">None</label>
-
-                <input type="radio" id="tidal" name="service" onClick="changeService('.tidal')">
-                <label for="tidal" class="radioLabel">Tidal</label>
-
-                <input type="radio" id="spotify" name="service" onClick="changeService('.spotify')">
-                <label for="spotify" class="radioLabel">Spotify</label>
-
-                <input type="radio" id="youtube" name="service" onClick="changeService('.youtube')">
-                <label for="youtube" class="radioLabel">YouTube</label>
-
-                <input type="radio" id="youtubeMusic" name="service" onClick="changeService('.youtubeMusic')">
-                <label for="youtubeMusic" class="radioLabel">YouTube Music</label>
-            </div>
-        </section>
+        <section id="overlays"></section>
         <footer id="footer">
         </footer>
         <script src="scripts/script.js"></script>
