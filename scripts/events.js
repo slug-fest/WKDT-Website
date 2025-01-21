@@ -261,7 +261,7 @@ function updateURL(eventRef) {
     if (eventRef === '') {
         window.history.pushState({ path: '/events' }, "", '/events');
     } else {
-        const newURL = `/events#${eventRef}`;
+        const newURL = `/events?${eventRef}`;
         window.history.pushState({ path: newURL }, "", newURL);
     }
 }
@@ -311,7 +311,7 @@ function changeService(choice) {
 // Listener based code
 window.onload = function() {
     loadEvents();
-    const eventRef = window.location.hash.substring(1);  // Extract the part after the '#' symbol
+    window.location.search.substring(1);  // Extract the part after the '?'
     if (eventRef) {
         // Show the overlay for the event corresponding to the eventRef
         setTimeout(() => {showEventOverlay(eventRef);}, 1000);
