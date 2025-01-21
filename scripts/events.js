@@ -311,7 +311,7 @@ function changeService(choice) {
 // Listener based code
 window.onload = function() {
     loadEvents();
-    window.location.search.substring(1);  // Extract the part after the '?'
+    const eventRef = window.location.search.substring(1);  // Extract the part after the '?'
     if (eventRef) {
         // Show the overlay for the event corresponding to the eventRef
         setTimeout(() => {showEventOverlay(eventRef);}, 1000);
