@@ -50,7 +50,10 @@ function parseEventMatrix(eventmatrix) {
 function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
-    const eventmatrix = `12,25,2024,12:00,12:00,pa,Merry Christmas!
+    const eventmatrix = `02,28,2025,17:00,23:30,dj,Infantry Ball
+    02,21,2025,16:30,21:30,dj,Brigade Boxing Open
+    01,31,2025,17:00,02:00,dj,Norwegian Foot March
+    12,25,2024,12:00,12:00,pa,Merry Christmas!
     12,14,2024,15:00,19:00,fb,ARMY vs NAVY
     12,12,2024,16:30,19:00,dj,Goat-Engineer Game,WKDT provided DJ support for the Goat/Engineer Game,Edox,f46b5452-a085-4491-a564-c7aca406589c,3ClRHsjxR3fJEyIwpN4nAf,videoseries?si=13-L-vXnKIM1pn17&amp;list=PLOh6mlSStDuTibDhz3sLF23Elwf100oJb,videoseries?si=s-nvEbi-JYcwKL4J&amp;list=PLOh6mlSStDuSp7YPlEW84WWRX50-5GoeO
     12,06,2024,20:00,23:00,fb,Tulane vs USMA,Broadcast live coverage of Army football
