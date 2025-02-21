@@ -52,7 +52,7 @@ function loadEvents() {
     // DO NOT USE @, (, ), /, or other symbols!!!
     const eventmatrix = `02,28,2025,17:00,23:30,dj,Infantry Ball
     02,21,2025,16:30,21:30,dj,Brigade Boxing Open
-    01,31,2025,17:00,02:00,dj,Norwegian Foot March
+    01,31,2025,17:00,02:00,dj,Norwegian Foot March,WKDT provided DJ support for the step-off and finish of the Norwegian Foot March,Coop,b124ade3-6216-47a2-9d72-c4bdb5d83cec,6j9Qr6TXPO4oLKqycUPgQC,videoseries?si=bfAPTr7wiFY48pt6&amp;list=PLOh6mlSStDuQdHSiuWcAclFTSZANa0dvH,videoseries?si=6jCsjGcwoGU8ld5j&amp;list=PLOh6mlSStDuRALJ6RP77uGv5QPigilgwF
     12,25,2024,12:00,12:00,pa,Merry Christmas!
     12,14,2024,15:00,19:00,fb,ARMY vs NAVY
     12,12,2024,16:30,19:00,dj,Goat-Engineer Game,WKDT provided DJ support for the Goat/Engineer Game,Edox,f46b5452-a085-4491-a564-c7aca406589c,3ClRHsjxR3fJEyIwpN4nAf,videoseries?si=13-L-vXnKIM1pn17&amp;list=PLOh6mlSStDuTibDhz3sLF23Elwf100oJb,videoseries?si=s-nvEbi-JYcwKL4J&amp;list=PLOh6mlSStDuSp7YPlEW84WWRX50-5GoeO
