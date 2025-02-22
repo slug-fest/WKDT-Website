@@ -51,7 +51,7 @@ function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
     const eventmatrix = `02,28,2025,17:00,23:30,dj,Infantry Ball
-    02,21,2025,16:30,21:30,dj,Brigade Boxing Open
+    02,21,2025,16:30,21:30,dj,Brigade Boxing Open,WKDT provided walkout music and hype music between rounds for the Brigade Boxing Open,Demize,945885e7-ab3b-463a-b95c-8e569ecba368,6Yj5agJJGtRwitHEzhOpBi,videoseries?si=TuEbOphGmtuwQ_bb&amp;list=PLOh6mlSStDuTt6PWaUpZJzmzDW0kPAclj,videoseries?si=qhIj9U4AyYYTTtaK&amp;list=PLOh6mlSStDuSd0Ah1OtaMGgKI7hwtO7a4
     01,31,2025,17:00,02:00,dj,Norwegian Foot March,WKDT provided DJ support for the step-off and finish of the Norwegian Foot March,Coop,b124ade3-6216-47a2-9d72-c4bdb5d83cec,6j9Qr6TXPO4oLKqycUPgQC,videoseries?si=bfAPTr7wiFY48pt6&amp;list=PLOh6mlSStDuQdHSiuWcAclFTSZANa0dvH,videoseries?si=6jCsjGcwoGU8ld5j&amp;list=PLOh6mlSStDuRALJ6RP77uGv5QPigilgwF
     12,25,2024,12:00,12:00,pa,Merry Christmas!
     12,14,2024,15:00,19:00,fb,ARMY vs NAVY
