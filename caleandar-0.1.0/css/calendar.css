@@ -95,13 +95,15 @@
   background: #eee;
 }
 @media (max-width: 1024px) {
-  .cld-labels, .prevMonth, .nextMonth {
+  .cld-labels, .prevMonth, .nextMonth, .currMonth {
     display: none;
+  }
+  .eventDay {
+    display: initial;
   }
   #cld-days {
     grid-template-columns: repeat(1, 1fr);
     overflow: auto;
-    height: 60vh;
   }
   .cld-day {
     min-height: 10vh;

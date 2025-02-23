@@ -92,8 +92,8 @@ function loadEvents() {
             document.getElementById("overlays").innerHTML += `
             <div class="replayContainer" eventRef="${eventRef}">
                 <details open class="contentWrapper">
-                    <summary class="replayTitle">${event.Title} by DJ ${event.DJ} | ${event.Date.getMonth()+1}/${event.Date.getDate()}/${event.Date.getFullYear()}<span class="closeOverlay" onclick="hideEventOverlay('${eventRef}');">X</span></summary>
-                    <p>${event.Description}<p>
+                    <summary class="replayTitle">${event.Title} by DJ ${event.DJ} | ${event.Date.getMonth()+1}/${event.Date.getDate()}/${event.Date.getFullYear()}<span class="closeOverlay" onclick="hideEventOverlay('${eventRef}');">x</span></summary>
+                    <p>${event.Description}</p>
                     <div id="selectService" class="radioGroup">
                         <input type="radio" id="none" name="service" onClick="changeService('.none')" checked>
                         <label for="none" class="radioLabel">None</label>
@@ -202,6 +202,7 @@ function createCalendar(calendar, element, adjuster) {
         if (events && events.length > 0) {
             const eventContainer = document.createElement('div');
             eventContainer.className = "cld-event";
+            day.classList.add("eventDay");
             events.forEach(event => {
                 eventContainer.innerHTML += `
                 <div class="cld-title ${event.Type} button" eventRef="${calendar.Selected.Month+1}-${dayNumber}-${calendar.Selected.Year}_${event.Title.replace(/ /g,'-')}">
@@ -332,8 +333,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     document.getElementById('calendar').addEventListener('click', function(event) {
-        if (event.target && event.target.matches('.dj')) {
-            showEventOverlay(event.target.getAttribute('eventRef'));
+        let target = event.target.closest('.dj');
+        if (target) {
+            showEventOverlay(target.getAttribute('eventRef'));
         }
-    });
+    });    
 });
