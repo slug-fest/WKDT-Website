@@ -50,7 +50,9 @@ function parseEventMatrix(eventmatrix) {
 function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
-    const eventmatrix = `03,09,2025,06:45,12:30,dj,Fallen Comrades Half Marathon
+    const eventmatrix = `04,04,2025,16:00,21:00,4th Reg Home Run Derby
+    03,28,2025,15:45,19:30,dj,C-1 Celtic Warrior Games
+    03,09,2025,06:45,12:30,dj,Fallen Comrades Half Marathon
     03,08,2025,20:45,22:30,dj,McDonald Conference for Leaders of Character (MCLC) Social
     03,07,2025,20:15,23:00,dj,McDonald Conference for Leaders of Character (MCLC) Trivia Night
     03,07,2025,15:00,23:00,dj,USFAA St. Barbara's Day Ball
