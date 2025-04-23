@@ -50,9 +50,15 @@ function parseEventMatrix(eventmatrix) {
 function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
-    const eventmatrix = `04,12,2025,20:20,22:30,dj,Catholic Spring Formal
-    04,12,2025,10:00,14:00,dj,ASCE Student Symposium Day 2
-    04,11,2025,08:30,13:30,dj,ASCE Student Symposium Day 1
+    const eventmatrix = `05,03,2025,08:00,13:00,dj,Sandhurst Crucible
+    05,01,2025,15:15,19:00,dj,4th Reg Fiesta
+    04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay
+    04,27,2025,06:00,14:00,dj,Special Olympics
+    04,25,2025,18:30,21:00,dj,2REG Strikefest
+    04,25,2025,16:30,20:00,dj,1REG ACT BBQ
+    04,12,2025,18:00,21:00,dj,Scoutmasters' Council Camporee
+    04,12,2025,10:00,14:00,dj,ASCE Symposium Day 2
+    04,11,2025,08:30,13:30,dj,ASCE Symposium Day 1
     04,04,2025,16:00,21:00,dj,4th Reg Home Run Derby
     03,28,2025,15:45,19:30,dj,C-1 Celtic Warrior Games
     03,09,2025,06:45,12:30,dj,Fallen Comrades Half Marathon
