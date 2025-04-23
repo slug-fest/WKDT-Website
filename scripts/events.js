@@ -56,7 +56,11 @@ function loadEvents() {
     04,27,2025,06:00,14:00,dj,Special Olympics
     04,25,2025,18:30,21:00,dj,2REG Strikefest
     04,25,2025,16:30,20:00,dj,1REG ACT BBQ
-    04,12,2025,18:00,21:00,dj,Scoutmasters' Council Camporee
+    04,23,2025,16:30,18:30,pa,Drill Support
+    04,17,2025,16:30,18:30,pa,Drill Support
+    04,15,2025,16:30,18:30,pa,Drill Support
+    04,12,2025,08:00,10:00,pa,Scoutmasters' Council Camporee 2
+    04,11,2025,18:00,21:00,pa,Scoutmasters' Council Camporee 1
     04,12,2025,10:00,14:00,dj,ASCE Symposium Day 2
     04,11,2025,08:30,13:30,dj,ASCE Symposium Day 1
     04,04,2025,16:00,21:00,dj,4th Reg Home Run Derby
