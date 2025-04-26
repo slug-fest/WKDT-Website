@@ -55,7 +55,7 @@ function loadEvents() {
     04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay
     04,27,2025,06:00,14:00,dj,Special Olympics
     04,25,2025,18:30,21:00,dj,2REG Strikefest
-    04,25,2025,16:30,20:00,dj,1REG ACT BBQ
+    04,25,2025,16:30,20:00,dj,1REG ACT BBQ,,Coop,31e9bd3c-1bb4-4a04-87d0-d4a34f0a4da3,5oXrhCSiri7spoZLyKA52O,videoseries?si=HT9ja5c7quorn3vP&amp;list=PLOh6mlSStDuTkT5lQ9FEus8S9-DVjvE_H,videoseries?si=NGS7x0kGh114tqQj&amp;list=PLOh6mlSStDuRO43AK7AhBARJti5OW3GJR
     04,23,2025,16:30,18:30,pa,Drill Support
     04,17,2025,16:30,18:30,pa,Drill Support
     04,15,2025,16:30,18:30,pa,Drill Support
