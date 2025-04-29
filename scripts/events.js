@@ -52,7 +52,7 @@ function loadEvents() {
     // DO NOT USE @, (, ), /, or other symbols!!!
     const eventmatrix = `05,03,2025,08:00,13:00,dj,Sandhurst Crucible
     05,01,2025,15:15,19:00,dj,4th Reg Fiesta
-    04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay,,e611ea65-6688-4bd8-ae0f-f61c5a726e87,0VL6XHJMscxbrMvDLVXhpZ,videoseries?si=alCc6qsz1LyfQgrk&amp;list=PLOh6mlSStDuQIqX67c0Gvc3jqzVwb_CUj,videoseries?si=xrXIIC6JN1lIvvKo&amp;list=PLOh6mlSStDuSKVQ9VW8R4XKQGlVSnTlbi
+    04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay,,,e611ea65-6688-4bd8-ae0f-f61c5a726e87,0VL6XHJMscxbrMvDLVXhpZ,videoseries?si=alCc6qsz1LyfQgrk&amp;list=PLOh6mlSStDuQIqX67c0Gvc3jqzVwb_CUj,videoseries?si=xrXIIC6JN1lIvvKo&amp;list=PLOh6mlSStDuSKVQ9VW8R4XKQGlVSnTlbi
     04,27,2025,06:00,14:00,dj,Special Olympics,,Vase,a0d36cb2-ffbf-4261-9c17-aaecbfe2c67d,4Wt1AMuzxhugWKnmQ7St3M,videoseries?si=eUUA4RaMa3PRyXkx&amp;list=PLOh6mlSStDuTkmb8D0iTM8nnL9TBVmQvu,videoseries?si=ePFbxpQUU3qJQYy1&amp;list=PLOh6mlSStDuRzITLmBG-xZdmXHSthnWtF
     04,25,2025,18:30,21:00,dj,2REG Strikefest,,Demize
     04,25,2025,16:30,20:00,dj,1REG ACT BBQ,,Coop,31e9bd3c-1bb4-4a04-87d0-d4a34f0a4da3,5oXrhCSiri7spoZLyKA52O,videoseries?si=HT9ja5c7quorn3vP&amp;list=PLOh6mlSStDuTkT5lQ9FEus8S9-DVjvE_H,videoseries?si=NGS7x0kGh114tqQj&amp;list=PLOh6mlSStDuRO43AK7AhBARJti5OW3GJR
