@@ -1,3 +1,6 @@
+:root {
+    interpolate-size: allow-keywords;
+}
 .fullWidth {
     width: 100%
 }
@@ -106,6 +109,16 @@ details[open] summary.replayTitle::before {
 }
 details[open].contentWrapper {
     border-radius: 0px 0px 12px 12px;
+    transition: 0.3s;
+}
+details::details-content {
+    overflow: hidden;
+    block-size: 0px;
+    transition: block-size 0.3s, content-visibility 0.3s;
+    transition-behavior: allow-discrete;
+}
+details[open]::details-content {
+    block-size:auto;
 }
 .closeOverlay {
     position: absolute;
