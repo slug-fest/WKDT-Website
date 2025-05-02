@@ -51,7 +51,7 @@ function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
     const eventmatrix = `05,03,2025,08:00,13:00,dj,Sandhurst Crucible
-    05,02,2025,17:15,20:00,dj,4th Reg Fiesta
+    05,02,2025,17:15,20:00,dj,4th Reg Fiesta,,Coop and Stimp,469810da-a281-4d41-9be9-43b7a642ed9d,4k3PjyeBpo3kS246Z62NTU,videoseries?si=Pa90qzi-ZtVXag7G&amp;list=PLOh6mlSStDuRRTfWfaXXbsGH2dtPqW8fb,videoseries?si=0x765yG302zkG5Nh&amp;list=PLOh6mlSStDuShYrShItt1QeCZxZL2R_jO
     05,02,2025,14:00,16:45,dj,Sandhurst Ruck Stepoff,,Coop,33aaf0b1-37c7-4b96-8c48-6df79ddfc25e,1ty2xwmvSIx0tJXlGy5GaI,videoseries?si=TDViOtT98LKTXY3s&amp;list=PLOh6mlSStDuQa-uHSxEPNWPvZ7Zy88Igy,videoseries?si=4PnVefGzndeaflyz&amp;list=PLOh6mlSStDuRRdlmwAYnG2gIZr6jgCp53
     04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay,,,e611ea65-6688-4bd8-ae0f-f61c5a726e87,0VL6XHJMscxbrMvDLVXhpZ,videoseries?si=alCc6qsz1LyfQgrk&amp;list=PLOh6mlSStDuQIqX67c0Gvc3jqzVwb_CUj,videoseries?si=xrXIIC6JN1lIvvKo&amp;list=PLOh6mlSStDuSKVQ9VW8R4XKQGlVSnTlbi
     04,27,2025,06:00,14:00,dj,Special Olympics,,Vase,a0d36cb2-ffbf-4261-9c17-aaecbfe2c67d,4Wt1AMuzxhugWKnmQ7St3M,videoseries?si=eUUA4RaMa3PRyXkx&amp;list=PLOh6mlSStDuTkmb8D0iTM8nnL9TBVmQvu,videoseries?si=ePFbxpQUU3qJQYy1&amp;list=PLOh6mlSStDuRzITLmBG-xZdmXHSthnWtF
