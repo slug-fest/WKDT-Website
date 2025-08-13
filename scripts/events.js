@@ -1,56 +1,24 @@
-class Event {
-    constructor(month, day, year, startTime, endTime, type, title, description, dj, serviceFragments = []) {
-        this.Date = new Date(year, month - 1, day);  // month is 0-based in JS
-        this.StartTime = startTime;
-        this.EndTime = endTime;
-        this.Type = type;
-        this.Title = title;
-        this.Description = description;
-        this.DJ = dj;
-        this.ServiceFragments = serviceFragments;  // Contains the service fragments for Tidal, Spotify, etc.
-    }
-    getFormattedTime() {
-        return `${this.StartTime} - ${this.EndTime}`;
-    }
-    getServiceEmbeds() {
-        return this.ServiceFragments.map((fragment, index) => {
-            switch (index) {
-                case 0: // Tidal
-                    return `<iframe class="tidal service" src="https://embed.tidal.com/playlists/${fragment}" title="TIDAL Embed Player" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
-                case 1: // Spotify
-                    return `<iframe class="spotify service" src="https://open.spotify.com/embed/playlist/${fragment}?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
-                case 2: // YouTube
-                    return `<iframe class="youtube service" src="https://www.youtube.com/embed/${fragment}" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-                case 3: // YouTube Music
-                    return `<iframe class="youtubeMusic service" src="https://www.youtube.com/embed/${fragment}" title="YouTube Music player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-                default:
-                    return ''; // Default case for any unexpected fragments
-            }
-        }).join('');
-    }
-}
-
-function parseEventMatrix(eventmatrix) {
-    return eventmatrix.split('\n').map(event => {
-        const [month, day, year, startTime, endTime, type, title, description, dj, tidal, spotify, yt, ytmusic] = event.split(',');
-        return new Event(
-            parseInt(month, 10),
-            parseInt(day, 10),
-            parseInt(year, 10),
-            startTime,
-            endTime,
-            type,
-            title,
-            description,
-            dj,
-            [tidal, spotify, yt, ytmusic].filter(fragment => fragment)
-        );
-    });
-}
 function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
-    const eventmatrix = `05,08,2025,16:30,18:30,pa,Drill Support
+    const eventmatrix = `
+    09,26,2025,18:00,21:00,dj,USMA Military Police Ball
+    09,20,2025,15:30,18:00,dj,Texas Tamale Tailgate 30th Anniversary
+    09,20,2025,12:00,15:30,fb,North Texas vs USMA
+    09,06,2025,19:00,22:30,fb,Kansas State vs USMA
+    08,29,2025,18:00,21:30,fb,Tarleton State vs USMA
+    08,28,2025,15:30,17:00,dj,USMA Branch Week CAPEX
+    08,27,2025,14:00,16:00,dj,USMA Branch Week CAPEX (Rehearsal)
+    08,25,2025,15:30,19:45,dj,USMA 2025 Branch Week Welcome Dinner
+    08,19,2025,19:00,22:00,dj,Club Night
+    08,17,2025,06:30,14:00,dj,West Point Triathalon (Adult triathalon)
+    08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon)
+    08,15,2025,07:30,09:30,pa,Drill Support
+    08,15,2025,04:20,06:45,dj,1CPT Run
+    08,14,2025,07:30,09:30,pa,Drill Support
+    08,13,2025,07:30,09:30,pa,Drill Support
+    08,12,2025,07:30,09:30,pa,Drill Support
+    05,08,2025,16:30,18:30,pa,Drill Support
     05,07,2025,16:30,18:30,pa,Drill Support
     05,06,2025,16:30,19:30,dj,Brigade Company Athletics Finals,,Falcon,d33d35cd-99e3-4dd4-96ad-4c0f216d605e,5SVu1Wm4Z4Ev6tAFuMcNJc,videoseries?si=m377tCX1xKWR1u0a&amp;list=PLOh6mlSStDuSrF3D8jFdmA9UPDVtVEelJ,videoseries?si=cULzYmBXsJkxJrJN&amp;list=PLOh6mlSStDuRgano9w_fQQtUiK-JXXjvG
     05,03,2025,08:00,13:00,dj,Sandhurst Crucible,,Vase,bbb82722-67d2-4f48-9ffc-c4a67ea0458c,2aHIw1ulk3u60QFKCT9Dez,videoseries?si=l6fOgwFhxwyxJ_x6&amp;list=PLOh6mlSStDuTyq9Y3Y9xnuzEiNcZImu3t,videoseries?si=5tsyUqZFJUcsvcN4&amp;list=PLOh6mlSStDuTFQjGnHM0XEq-ZAj_CPOcR
@@ -137,6 +105,54 @@ function loadEvents() {
                 ${event.getServiceEmbeds()}
             </div>`;
         }
+    });
+}
+class Event {
+    constructor(month, day, year, startTime, endTime, type, title, description, dj, serviceFragments = []) {
+        this.Date = new Date(year, month - 1, day);  // month is 0-based in JS
+        this.StartTime = startTime;
+        this.EndTime = endTime;
+        this.Type = type;
+        this.Title = title;
+        this.Description = description;
+        this.DJ = dj;
+        this.ServiceFragments = serviceFragments;  // Contains the service fragments for Tidal, Spotify, etc.
+    }
+    getFormattedTime() {
+        return `${this.StartTime} - ${this.EndTime}`;
+    }
+    getServiceEmbeds() {
+        return this.ServiceFragments.map((fragment, index) => {
+            switch (index) {
+                case 0: // Tidal
+                    return `<iframe class="tidal service" src="https://embed.tidal.com/playlists/${fragment}" title="TIDAL Embed Player" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
+                case 1: // Spotify
+                    return `<iframe class="spotify service" src="https://open.spotify.com/embed/playlist/${fragment}?utm_source=generator" title="Spotify Embed Player" loading="lazy" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
+                case 2: // YouTube
+                    return `<iframe class="youtube service" src="https://www.youtube.com/embed/${fragment}" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+                case 3: // YouTube Music
+                    return `<iframe class="youtubeMusic service" src="https://www.youtube.com/embed/${fragment}" title="YouTube Music player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+                default:
+                    return ''; // Default case for any unexpected fragments
+            }
+        }).join('');
+    }
+}
+function parseEventMatrix(eventmatrix) {
+    return eventmatrix.split('\n').map(event => {
+        const [month, day, year, startTime, endTime, type, title, description, dj, tidal, spotify, yt, ytmusic] = event.split(',');
+        return new Event(
+            parseInt(month, 10),
+            parseInt(day, 10),
+            parseInt(year, 10),
+            startTime,
+            endTime,
+            type,
+            title,
+            description,
+            dj,
+            [tidal, spotify, yt, ytmusic].filter(fragment => fragment)
+        );
     });
 }
 class Calendar {
@@ -363,3 +379,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
