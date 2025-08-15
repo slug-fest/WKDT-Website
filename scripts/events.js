@@ -13,9 +13,9 @@ function loadEvents() {
     08,19,2025,19:00,22:00,dj,Club Night
     08,17,2025,06:30,14:00,dj,West Point Triathalon (Adult triathalon)
     08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon)
+    08,15,2025,16:30,18:30,pa,Drill Support
     08,15,2025,07:30,09:30,pa,Drill Support
-    08,15,2025,04:20,06:45,dj,1CPT Run
-    08,14,2025,07:30,09:30,pa,Drill Support
+    08,15,2025,04:20,06:45,dj,1CPT Run,,Coop,ba0dfc13-22cd-40dc-b474-a904dbe68695,5khv1gfRmco6IusWwBNYxW,videoseries?si=0P9E_PQSl5YkZwNM&amp;list=PLOh6mlSStDuTwdpJMG-e4jEKY5bElRLmb,videoseries?si=LxR9cMdJ289qNube&amp;list=PLOh6mlSStDuRarUZ2GjomRAy4ImxznoJZ
     08,13,2025,07:30,09:30,pa,Drill Support
     08,12,2025,07:30,09:30,pa,Drill Support
     05,08,2025,16:30,18:30,pa,Drill Support
