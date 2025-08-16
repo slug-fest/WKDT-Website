@@ -104,14 +104,19 @@ header {
 }
 #menu-toggle {
     display: none;
+    pointer-events: none;
 }
 #burger {
     display: none;
     transition: right 0.3s;
+    cursor: pointer;
+}
+.burger-line {
+    pointer-events: none;
 }
 .burger-line div {
     width: 30px;
-    height: 3px;
+    height: 3px; 
     background-color: #D3BC8D;
     margin: 5px;
     transition: right 0.3s;
@@ -326,4 +331,30 @@ footer {
 #footer a:hover {
     color: #D3BC8D;
     text-decoration: underline;
+}
+#radioPopout {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction:row;
+    transition: transform 0.5s ease;
+}
+#radioPlayer {
+    border: 2px solid #D3BC8D;
+    background-color: #000D;
+    padding: 5px;
+}
+#radioPopoutToggle {
+    background-color: #D3BC8D;
+    padding: 5px;
+    height: fit-content;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.rotate {
+    transform: rotateY(180deg);
+}
+.radioPopoutOffscreen {
+    transform: translate(315px);
 }

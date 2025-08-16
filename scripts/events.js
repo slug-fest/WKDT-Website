@@ -12,7 +12,7 @@ function loadEvents() {
     08,25,2025,15:30,19:45,dj,USMA 2025 Branch Week Welcome Dinner
     08,19,2025,19:00,22:00,dj,Club Night
     08,17,2025,06:30,14:00,dj,West Point Triathalon (Adult triathalon)
-    08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon)
+    08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon),,Vase,8b1adabf-9ee4-4901-9c90-a096bfa6fc20,3CYrqM6ISTzr1lWh0qv8Cy,videoseries?si=TFY2g-a2000mIsVB&amp;list=PLOh6mlSStDuQLUnkBQST8n7vZtyG7VzNR,videoseries?si=UxcMOb2GVO5-YvtZ&amp;list=PLOh6mlSStDuSJsB9sLU6kTOdOB4zu7dLH
     08,15,2025,16:30,18:30,pa,Drill Support
     08,15,2025,07:30,09:30,pa,Drill Support
     08,15,2025,05:35,06:45,dj,1CPT Run,,Coop,ba0dfc13-22cd-40dc-b474-a904dbe68695,5khv1gfRmco6IusWwBNYxW,videoseries?si=0P9E_PQSl5YkZwNM&amp;list=PLOh6mlSStDuTwdpJMG-e4jEKY5bElRLmb,videoseries?si=LxR9cMdJ289qNube&amp;list=PLOh6mlSStDuRarUZ2GjomRAy4ImxznoJZ
