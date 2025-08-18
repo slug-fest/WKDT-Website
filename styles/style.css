@@ -22,11 +22,13 @@ a:hover {
     color: #D3BC8D;
 }
 .button {
+    background-color: #D3BC8D;
+    color: black;
     border: 2px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.button:hover {
+.button:hover, .button.active {
     color: initial;
     background-color: white;
     border: 2px solid grey;
@@ -238,20 +240,12 @@ header {
     margin-bottom: 1.5rem;
 }
 .bigImageButton {
-    background-color: #D3BC8D;
-    color: black;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.85;
-    border: 2px solid transparent;
     padding: 0.8em 1em 0.7em 1em;
     margin: 1.5rem 0;
-}
-.bigImageButton:hover {
-    color: initial;
-    background-color: white;
-    border: 2px solid grey;
 }
 @media (max-width: 1024px) {
     .bigImageContainer {
@@ -346,14 +340,12 @@ footer {
     padding: 5px;
 }
 #radioPopoutToggle {
-    background-color: #D3BC8D;
     padding: 5px;
     height: fit-content;
-    cursor: pointer;
     transition: all 0.5s ease;
 }
 .rotate {
-    transform: rotateY(180deg);
+    transform: rotateY(181deg);
 }
 .radioPopoutOffscreen {
     transform: translate(315px);

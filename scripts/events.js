@@ -11,23 +11,23 @@ function loadEvents() {
     08,27,2025,14:00,16:00,dj,USMA Branch Week CAPEX (Rehearsal)
     08,25,2025,15:30,19:45,dj,USMA 2025 Branch Week Welcome Dinner
     08,19,2025,19:00,22:00,dj,Club Night
-    08,17,2025,06:30,14:00,dj,West Point Triathalon (Adult triathalon)
-    08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon),,Vase,8b1adabf-9ee4-4901-9c90-a096bfa6fc20,3CYrqM6ISTzr1lWh0qv8Cy,videoseries?si=TFY2g-a2000mIsVB&amp;list=PLOh6mlSStDuQLUnkBQST8n7vZtyG7VzNR,videoseries?si=UxcMOb2GVO5-YvtZ&amp;list=PLOh6mlSStDuSJsB9sLU6kTOdOB4zu7dLH
+    08,17,2025,06:30,14:00,dj,West Point Triathalon (Adult triathalon),No Description,Edox,f67ad2fc-9c00-4375-a007-c229f41f00e8,4jqc9eajBEqNndgPsQ08tS,videoseries?si=ZxAN6BkodSZ3oCcz&amp;list=PLOh6mlSStDuTdqB6bYU7-A8lzv_iVMRmK,videoseries?si=T6CJ4isdJTH5LYk4&amp;list=PLOh6mlSStDuRkM1Q3KFv3DuAWRkbe2xzO
+    08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon),No Description,Vase,8b1adabf-9ee4-4901-9c90-a096bfa6fc20,3CYrqM6ISTzr1lWh0qv8Cy,videoseries?si=TFY2g-a2000mIsVB&amp;list=PLOh6mlSStDuQLUnkBQST8n7vZtyG7VzNR,videoseries?si=UxcMOb2GVO5-YvtZ&amp;list=PLOh6mlSStDuSJsB9sLU6kTOdOB4zu7dLH
     08,15,2025,16:30,18:30,pa,Drill Support
     08,15,2025,07:30,09:30,pa,Drill Support
-    08,15,2025,05:35,06:45,dj,1CPT Run,,Coop,ba0dfc13-22cd-40dc-b474-a904dbe68695,5khv1gfRmco6IusWwBNYxW,videoseries?si=0P9E_PQSl5YkZwNM&amp;list=PLOh6mlSStDuTwdpJMG-e4jEKY5bElRLmb,videoseries?si=LxR9cMdJ289qNube&amp;list=PLOh6mlSStDuRarUZ2GjomRAy4ImxznoJZ
+    08,15,2025,05:35,06:45,dj,1CPT Run,No Description,Coop,ba0dfc13-22cd-40dc-b474-a904dbe68695,5khv1gfRmco6IusWwBNYxW,videoseries?si=0P9E_PQSl5YkZwNM&amp;list=PLOh6mlSStDuTwdpJMG-e4jEKY5bElRLmb,videoseries?si=LxR9cMdJ289qNube&amp;list=PLOh6mlSStDuRarUZ2GjomRAy4ImxznoJZ
     08,13,2025,07:30,09:30,pa,Drill Support
     08,12,2025,07:30,09:30,pa,Drill Support
     05,08,2025,16:30,18:30,pa,Drill Support
     05,07,2025,16:30,18:30,pa,Drill Support
-    05,06,2025,16:30,19:30,dj,Brigade Company Athletics Finals,,Falcon,d33d35cd-99e3-4dd4-96ad-4c0f216d605e,5SVu1Wm4Z4Ev6tAFuMcNJc,videoseries?si=m377tCX1xKWR1u0a&amp;list=PLOh6mlSStDuSrF3D8jFdmA9UPDVtVEelJ,videoseries?si=cULzYmBXsJkxJrJN&amp;list=PLOh6mlSStDuRgano9w_fQQtUiK-JXXjvG
-    05,03,2025,08:00,13:00,dj,Sandhurst Crucible,,Vase,bbb82722-67d2-4f48-9ffc-c4a67ea0458c,2aHIw1ulk3u60QFKCT9Dez,videoseries?si=l6fOgwFhxwyxJ_x6&amp;list=PLOh6mlSStDuTyq9Y3Y9xnuzEiNcZImu3t,videoseries?si=5tsyUqZFJUcsvcN4&amp;list=PLOh6mlSStDuTFQjGnHM0XEq-ZAj_CPOcR
-    05,02,2025,17:15,20:00,dj,4th Reg Fiesta,,Coop and Stimp,2d086156-1da9-47df-932b-755d8e67cba1,6pvO0q4aXJb556xO6HFntt,videoseries?si=HiO9DHr1cTv7c9AU&amp;list=PLOh6mlSStDuQQ75P5aWdUc07J0tw-XP7r,videoseries?si=pLLwKkRwknGz-DgS&amp;list=PLOh6mlSStDuTTeEM8suWs9ohNjhBYMUqk
-    05,02,2025,14:00,16:45,dj,Sandhurst Ruck Stepoff,,Coop,33aaf0b1-37c7-4b96-8c48-6df79ddfc25e,1ty2xwmvSIx0tJXlGy5GaI,videoseries?si=TDViOtT98LKTXY3s&amp;list=PLOh6mlSStDuQa-uHSxEPNWPvZ7Zy88Igy,videoseries?si=4PnVefGzndeaflyz&amp;list=PLOh6mlSStDuRRdlmwAYnG2gIZr6jgCp53
-    04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay,,,e611ea65-6688-4bd8-ae0f-f61c5a726e87,0VL6XHJMscxbrMvDLVXhpZ,videoseries?si=alCc6qsz1LyfQgrk&amp;list=PLOh6mlSStDuQIqX67c0Gvc3jqzVwb_CUj,videoseries?si=xrXIIC6JN1lIvvKo&amp;list=PLOh6mlSStDuSKVQ9VW8R4XKQGlVSnTlbi
-    04,27,2025,06:00,14:00,dj,Special Olympics,,Vase,a0d36cb2-ffbf-4261-9c17-aaecbfe2c67d,4Wt1AMuzxhugWKnmQ7St3M,videoseries?si=eUUA4RaMa3PRyXkx&amp;list=PLOh6mlSStDuTkmb8D0iTM8nnL9TBVmQvu,videoseries?si=ePFbxpQUU3qJQYy1&amp;list=PLOh6mlSStDuRzITLmBG-xZdmXHSthnWtF
-    04,25,2025,18:30,21:00,dj,2REG Strikefest,,Demize
-    04,25,2025,16:30,20:00,dj,1REG ACT BBQ,,Coop,31e9bd3c-1bb4-4a04-87d0-d4a34f0a4da3,5oXrhCSiri7spoZLyKA52O,videoseries?si=HT9ja5c7quorn3vP&amp;list=PLOh6mlSStDuTkT5lQ9FEus8S9-DVjvE_H,videoseries?si=NGS7x0kGh114tqQj&amp;list=PLOh6mlSStDuRO43AK7AhBARJti5OW3GJR
+    05,06,2025,16:30,19:30,dj,Brigade Company Athletics Finals,No Description,Falcon,d33d35cd-99e3-4dd4-96ad-4c0f216d605e,5SVu1Wm4Z4Ev6tAFuMcNJc,videoseries?si=m377tCX1xKWR1u0a&amp;list=PLOh6mlSStDuSrF3D8jFdmA9UPDVtVEelJ,videoseries?si=cULzYmBXsJkxJrJN&amp;list=PLOh6mlSStDuRgano9w_fQQtUiK-JXXjvG
+    05,03,2025,08:00,13:00,dj,Sandhurst Crucible,No Description,Vase,bbb82722-67d2-4f48-9ffc-c4a67ea0458c,2aHIw1ulk3u60QFKCT9Dez,videoseries?si=l6fOgwFhxwyxJ_x6&amp;list=PLOh6mlSStDuTyq9Y3Y9xnuzEiNcZImu3t,videoseries?si=5tsyUqZFJUcsvcN4&amp;list=PLOh6mlSStDuTFQjGnHM0XEq-ZAj_CPOcR
+    05,02,2025,17:15,20:00,dj,4th Reg Fiesta,No Description,Coop and Stimp,2d086156-1da9-47df-932b-755d8e67cba1,6pvO0q4aXJb556xO6HFntt,videoseries?si=HiO9DHr1cTv7c9AU&amp;list=PLOh6mlSStDuQQ75P5aWdUc07J0tw-XP7r,videoseries?si=pLLwKkRwknGz-DgS&amp;list=PLOh6mlSStDuTTeEM8suWs9ohNjhBYMUqk
+    05,02,2025,14:00,16:45,dj,Sandhurst Ruck Stepoff,No Description,Coop,33aaf0b1-37c7-4b96-8c48-6df79ddfc25e,1ty2xwmvSIx0tJXlGy5GaI,videoseries?si=TDViOtT98LKTXY3s&amp;list=PLOh6mlSStDuQa-uHSxEPNWPvZ7Zy88Igy,videoseries?si=4PnVefGzndeaflyz&amp;list=PLOh6mlSStDuRRdlmwAYnG2gIZr6jgCp53
+    04,28,2025,14:30,19:00,dj,Sandhurst OOM Relay,No Description,Lock,e611ea65-6688-4bd8-ae0f-f61c5a726e87,0VL6XHJMscxbrMvDLVXhpZ,videoseries?si=alCc6qsz1LyfQgrk&amp;list=PLOh6mlSStDuQIqX67c0Gvc3jqzVwb_CUj,videoseries?si=xrXIIC6JN1lIvvKo&amp;list=PLOh6mlSStDuSKVQ9VW8R4XKQGlVSnTlbi
+    04,27,2025,06:00,14:00,dj,Special Olympics,No Description,Vase,a0d36cb2-ffbf-4261-9c17-aaecbfe2c67d,4Wt1AMuzxhugWKnmQ7St3M,videoseries?si=eUUA4RaMa3PRyXkx&amp;list=PLOh6mlSStDuTkmb8D0iTM8nnL9TBVmQvu,videoseries?si=ePFbxpQUU3qJQYy1&amp;list=PLOh6mlSStDuRzITLmBG-xZdmXHSthnWtF
+    04,25,2025,18:30,21:00,dj,2REG Strikefest,No Description,Demize
+    04,25,2025,16:30,20:00,dj,1REG ACT BBQ,No Description,Coop,31e9bd3c-1bb4-4a04-87d0-d4a34f0a4da3,5oXrhCSiri7spoZLyKA52O,videoseries?si=HT9ja5c7quorn3vP&amp;list=PLOh6mlSStDuTkT5lQ9FEus8S9-DVjvE_H,videoseries?si=NGS7x0kGh114tqQj&amp;list=PLOh6mlSStDuRO43AK7AhBARJti5OW3GJR
     04,23,2025,16:30,18:30,pa,Drill Support
     04,17,2025,16:30,18:30,pa,Drill Support
     04,15,2025,16:30,18:30,pa,Drill Support
@@ -84,7 +84,7 @@ function loadEvents() {
             document.getElementById("overlays").innerHTML += `
             <div class="replayContainer" eventRef="${eventRef}">
                 <details open class="contentWrapper">
-                    <summary class="replayTitle">${event.Title} by DJ ${event.DJ} | ${event.Date.getMonth()+1}/${event.Date.getDate()}/${event.Date.getFullYear()}<span class="closeOverlay" onclick="hideEventOverlay('${eventRef}');">x</span></summary>
+                    <summary class="replayTitle">${event.Title} by DJ ${event.DJ} | ${event.Date.getMonth()+1}/${event.Date.getDate()}/${event.Date.getFullYear()}</summary>
                     <p>${event.Description}</p>
                     <div id="selectService" class="radioGroup">
                         <input type="radio" id="none" name="service" onClick="changeService('.none')" checked>
@@ -99,6 +99,7 @@ function loadEvents() {
                         <label for="youtubeMusic" class="radioLabel">YouTube Music</label>
                     </div>
                 </details>
+                <div class="button closeOverlay" onclick="hideEventOverlay('${eventRef}');">X</div>
                 <div class="none service shown">
                     <h3 class="explainer">Please select a music provider from the list above.</h3>
                 </div>
