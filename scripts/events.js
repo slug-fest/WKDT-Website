@@ -10,7 +10,9 @@ function loadEvents() {
     08,28,2025,15:30,17:00,dj,USMA Branch Week CAPEX
     08,27,2025,14:00,16:00,dj,USMA Branch Week CAPEX (Rehearsal)
     08,25,2025,15:30,19:45,dj,USMA 2025 Branch Week Welcome Dinner
-    08,19,2025,19:00,22:00,dj,Club Night
+    08,19,2025,19:00,22:00,dj,Club Night,No Description,Coop and Stimp,5d315240-05a4-4959-94e4-0958ede545f1,0vS7UnrN2SNP1YSKTRQ8xr,videoseries?si=1qXWbBUCHVKVtVem&amp;list=PLOh6mlSStDuSU-XlVwHOF126BtxphfBYz,videoseries?si=2fG47b332RsFqE_O&amp;list=PLOh6mlSStDuTBscV4XUxGm4jiB4cv7gA9
+    08,19,2025,16:30,18:30,pa,Drill Support
+    08,18,2025,16:30,18:30,pa,Drill Support
     08,17,2025,06:30,14:00,dj,West Point Triathalon (Adult triathalon),No Description,Edox,f67ad2fc-9c00-4375-a007-c229f41f00e8,4jqc9eajBEqNndgPsQ08tS,videoseries?si=ZxAN6BkodSZ3oCcz&amp;list=PLOh6mlSStDuTdqB6bYU7-A8lzv_iVMRmK,videoseries?si=T6CJ4isdJTH5LYk4&amp;list=PLOh6mlSStDuRkM1Q3KFv3DuAWRkbe2xzO
     08,16,2025,11:00,15:00,dj,West Point Triathalon (Kids triathlon),No Description,Vase,8b1adabf-9ee4-4901-9c90-a096bfa6fc20,3CYrqM6ISTzr1lWh0qv8Cy,videoseries?si=TFY2g-a2000mIsVB&amp;list=PLOh6mlSStDuQLUnkBQST8n7vZtyG7VzNR,videoseries?si=UxcMOb2GVO5-YvtZ&amp;list=PLOh6mlSStDuSJsB9sLU6kTOdOB4zu7dLH
     08,15,2025,16:30,18:30,pa,Drill Support
