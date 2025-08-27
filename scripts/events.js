@@ -9,7 +9,10 @@ function loadEvents() {
     08,29,2025,18:00,21:30,fb,Tarleton State vs USMA
     08,28,2025,15:30,17:00,dj,USMA Branch Week CAPEX
     08,27,2025,14:00,16:00,dj,USMA Branch Week CAPEX (Rehearsal)
-    08,25,2025,15:30,19:45,dj,USMA 2025 Branch Week Welcome Dinner
+    08,27,2025,16:30,18:30,pa,Drill Support
+    08,26,2025,16:30,18:30,pa,Drill Support
+    08,25,2025,15:30,19:45,dj,USMA 2025 Branch Week Welcome Dinner,No Description,Falcon,dc31e968-6dbb-43c9-aea2-4f771ffa316d,1z7DFuhZW9ZJpHqNW3G7sY,videoseries?si=5wa5gIQ-4E6cxJtp&amp;list=PLOh6mlSStDuQvG-mhc6jJCacq8Hc7z5QT,videoseries?si=bwFAaVQaLNcUmszZ&amp;list=PLOh6mlSStDuTECrsxBp4XQNfjIUeUPKD3
+    08,25,2025,16:30,18:30,pa,Drill Support
     08,19,2025,19:00,22:00,dj,Club Night,No Description,Coop and Stimp,5d315240-05a4-4959-94e4-0958ede545f1,0vS7UnrN2SNP1YSKTRQ8xr,videoseries?si=1qXWbBUCHVKVtVem&amp;list=PLOh6mlSStDuSU-XlVwHOF126BtxphfBYz,videoseries?si=2fG47b332RsFqE_O&amp;list=PLOh6mlSStDuTBscV4XUxGm4jiB4cv7gA9
     08,19,2025,16:30,18:30,pa,Drill Support
     08,18,2025,16:30,18:30,pa,Drill Support
