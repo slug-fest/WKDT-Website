@@ -2,9 +2,39 @@ function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
     const eventmatrix = `
-    09,26,2025,18:00,21:00,dj,USMA Military Police Ball
+    12,13,2025,12:00,16:00,fb,Army vs Navy
+    12,13,2025,09:00,11:30,dj,Army vs Navy Corps Tailgate
+    11,29,2025,12:00,16:00,fb,UTSA vs USMA
+    11,22,2025,12:00,16:00,fb,Tulsa vs USMA
+    11,08,2025,12:00,16:00,fb,Tulane vs USMA
+    11,08,2025,09:00,11:30,dj,Black Knight Alley Tailgate
+    11,06,2025,16:30,18:30,pa,Drill Support
+    11,05,2025,16:30,18:30,pa,Drill Support
+    11,04,2025,16:00,19:00,dj,Brigade Athletics Finals
+    11,03,2025,16:30,18:30,pa,Drill Support
+    11,01,2025,12:00,16:00,fb,Air Force vs USMA
+    10,30,2025,19:30,22:30,dj,1BN 1REG Fall Festival
+    10,29,2025,16:30,18:30,pa,Drill Support
+    10,28,2025,16:30,18:30,pa,Drill Support
+    10,25,2025,18:00,20:00,dj,2REG Strikefest
+    10,24,2025,18:00,22:00,dj,2REG Strikefest
+    10,24,2025,16:30,18:30,dj,1REG BBQ
+    10,21,2025,16:30,18:30,pa,Drill Support
+    10,20,2025,16:30,18:30,pa,Drill Support
+    10,18,2025,18:00,23:00,dj,New York Military Forces Dining Out
+    10,18,2025,18:00,22:00,fb,Tulane vs USMA
+    10,17,2025,16:30,18:30,dj,AOG Connect
+    10,11,2025,09:00,11:30,dj,Black Knight Alley Tailgate
+    10,11,2025,12:00,15:30,fb,Charlotte vs USMA
+    10,09,2025,16:30,18:30,pa,Drill Support
+    10,07,2025,16:30,18:30,pa,Drill Support
+    10,04,2025,18:00,22:30,fb,UAB vs USMA
+    09,28,2025,03:00,18:00,pa,Tunnel To Towers Memorial Run
+    09,25,2025,18:00,21:30,fb,ECU vs USMA
     09,20,2025,15:30,18:00,dj,Texas Tamale Tailgate 30th Anniversary
     09,20,2025,12:00,15:30,fb,North Texas vs USMA
+    09,17,2025,16:30,18:30,pa,Drill Support
+    09,15,2025,16:30,18:30,pa,Drill Support
     09,06,2025,19:00,22:30,fb,Kansas State vs USMA
     08,29,2025,18:00,21:30,fb,Tarleton State vs USMA
     08,28,2025,15:30,17:00,dj,USMA Branch Week CAPEX
@@ -385,5 +415,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
