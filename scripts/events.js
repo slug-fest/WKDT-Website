@@ -31,7 +31,7 @@ function loadEvents() {
     10,04,2025,18:00,22:30,fb,UAB vs USMA
     09,28,2025,03:00,18:00,pa,Tunnel To Towers Memorial Run
     09,25,2025,18:00,21:30,fb,ECU vs USMA
-    09,20,2025,15:30,18:00,dj,Texas Tamale Tailgate 30th Anniversary
+    09,20,2025,15:30,18:00,dj,Texas Tamale Tailgate 30th Anniversary,No Description,Manny,d3a47d03-ae8d-408e-824f-3225f583ae0d,1UDTc42ZyU0xKUnbQfELdw,videoseries?si=3D2beHb3SCIHgGlN&amp;list=PLOh6mlSStDuSbNeLelx7JAY06Hwzcw6EM,videoseries?si=jKql_jYcQjmuJPrU&amp;list=PLOh6mlSStDuShCofTGC83I3wIG7Sr1Lyr
     09,20,2025,12:00,15:30,fb,North Texas vs USMA
     09,17,2025,16:30,18:30,pa,Drill Support
     09,15,2025,16:30,18:30,pa,Drill Support
@@ -415,6 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
 
