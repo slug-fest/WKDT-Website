@@ -23,7 +23,7 @@ function loadEvents() {
     10,20,2025,16:30,18:30,pa,Drill Support
     10,18,2025,18:00,23:00,dj,New York Military Forces Dining Out
     10,18,2025,18:00,22:00,fb,Tulane vs USMA
-    10,17,2025,16:30,18:30,dj,AOG Connect
+    10,17,2025,16:30,18:30,dj,AOG Connect,No Description,BanzWalk,45da7f2d-4bde-4859-aefa-28971026920e,5gQmOMK4olFuRM4LVBTnGn,videoseries?si=sqRYCrJamkbt_kFo&amp;list=PLOh6mlSStDuR0AwInMD5MPRSLMe6UUiDk,videoseries?si=PZBECOF9JfhNOygJ&amp;list=PLOh6mlSStDuRkXwt5Iuka-EYN3EZdeSHY
     10,11,2025,09:00,11:30,dj,Black Knight Alley Tailgate,No Description,BanzWalk,01568bc2-7262-459e-ba8b-ba0475b51a73,2Gy958DlSr8ImlumrNGbCQ,videoseries?si=vofOHbdMOExuvhdP&amp;list=PLOh6mlSStDuTdm633nA90_3T40hw_U0wS,videoseries?si=EvuF8Dq4rgVKIIF4&amp;list=PLOh6mlSStDuS0udBLI28jfwT4Up8V3VZu
     10,11,2025,12:00,15:30,fb,Charlotte vs USMA
     10,09,2025,16:30,18:30,pa,Drill Support
@@ -415,6 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
 
