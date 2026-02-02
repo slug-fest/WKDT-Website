@@ -2,7 +2,7 @@ function loadEvents() {
     // mm,dd,yyyy,start,end,type,title,[description,dj,Tidal,Spotify,YouTube,YoutubeMusic]
     // DO NOT USE @, (, ), /, or other symbols!!!
     const eventmatrix = `
-    01,30,2026,17:00,22:30,dj,Infantry Ball
+    01,30,2026,17:00,22:30,dj,Infantry Ball,No Description,Ethan,9076e1f1-493b-411b-942c-abe18cf88fa4,1GCyvdYupZj1Jk9P7UmX85,videoseries?si=RNDdXqjsG7YBLjTY&amp;list=PLOh6mlSStDuQlGD6-VgKQVmslKhEJ4yGW,videoseries?si=ETiwyPerPkzFiXSp&amp;list=PLOh6mlSStDuR8YYlbEqNxKWgrwmnre9MO
     12,13,2025,12:00,16:00,fb,Army vs Navy
     12,13,2025,09:00,11:30,dj,Army vs Navy Corps Tailgate
     11,29,2025,12:00,16:00,fb,UTSA vs USMA
@@ -416,6 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
 
