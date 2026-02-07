@@ -17,8 +17,8 @@ function loadEvents() {
     10,30,2025,19:30,22:30,dj,1BN 1REG Fall Festival
     10,29,2025,16:30,18:30,pa,Drill Support
     10,28,2025,16:30,18:30,pa,Drill Support
-    10,25,2025,18:00,20:00,dj,2REG Strikefest
-    10,24,2025,18:00,22:00,dj,2REG Strikefest,No Description,Dic,af3e0bbd-5fbe-4a4d-b608-79e1d2b0ab49,3VIcNYinmhh5N9zPG6jLE5?utm_source=generator,videoseries?si=8_4vsa3-MjrezbLF&amp;list=PLOh6mlSStDuTTrmYHW5ByatflihXBlIRp,videoseries?si=eBKDvssjX95dd2-V&amp;list=PLOh6mlSStDuQvS2xUvJOlBDYU2Qch64PE
+    10,25,2025,15:30,21:00,dj,3BN Nightfest,No Description,VasSwiCar,
+    10,24,2025,18:00,20:00,dj,2REG Strikefest,No Description,Dic,af3e0bbd-5fbe-4a4d-b608-79e1d2b0ab49,3VIcNYinmhh5N9zPG6jLE5?utm_source=generator,videoseries?si=8_4vsa3-MjrezbLF&amp;list=PLOh6mlSStDuTTrmYHW5ByatflihXBlIRp,videoseries?si=eBKDvssjX95dd2-V&amp;list=PLOh6mlSStDuQvS2xUvJOlBDYU2Qch64PE
     10,24,2025,16:30,18:30,dj,1REG BBQ,No Description,BanJonSwi,60e8eb4f-4667-4cf7-9d85-0fe411c82050,5KE7003X92ZBOD3YkMB087,videoseries?si=fedhxpBQKankDQFm&amp;list=PLOh6mlSStDuQjOk2kyxYqWrBfBTmWn1jH,videoseries?si=AUYGR3UFFGjpIrXj&amp;list=PLOh6mlSStDuSmwbcLvoLi2reLiNA-uPWm
     10,21,2025,16:30,18:30,pa,Drill Support
     10,20,2025,16:30,18:30,pa,Drill Support
@@ -416,6 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
 
