@@ -19,7 +19,7 @@ function loadEvents() {
     10,28,2025,16:30,18:30,pa,Drill Support
     10,25,2025,18:00,20:00,dj,2REG Strikefest
     10,24,2025,18:00,22:00,dj,2REG Strikefest
-    10,24,2025,16:30,18:30,dj,1REG BBQ
+    10,24,2025,16:30,18:30,dj,1REG BBQ,No Description,BanJonSwi,60e8eb4f-4667-4cf7-9d85-0fe411c82050,5KE7003X92ZBOD3YkMB087?utm_source=generatorvideoseries?si=-8PXxPmEEVz0aKPx&amp;list=PLOh6mlSStDuSmwbcLvoLi2reLiNA-uPWm,videoseries?si=fedhxpBQKankDQFm&amp;list=PLOh6mlSStDuQjOk2kyxYqWrBfBTmWn1jH,videoseries?si=AUYGR3UFFGjpIrXj&amp;list=PLOh6mlSStDuSmwbcLvoLi2reLiNA-uPWm
     10,21,2025,16:30,18:30,pa,Drill Support
     10,20,2025,16:30,18:30,pa,Drill Support
     10,18,2025,18:00,23:00,dj,New York Military Forces Dining Out,No Description,spiritducorp,044c0fda-d076-46b8-83f7-3eac28371a4d,58hBCginnXn1YZOJiwpKPC,videoseries?si=7qMwg-WOQvC84RQy&amp;list=PLOh6mlSStDuRVz_lb0ZGCOpzM6pIbcLo5,videoseries?si=1-x18QRQkTXBhITI&amp;list=PLOh6mlSStDuSyPYxJQAxGi7B5fzJuYNZv
@@ -416,6 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
 
