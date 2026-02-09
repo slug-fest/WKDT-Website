@@ -8,7 +8,7 @@ function loadEvents() {
     11,29,2025,12:00,16:00,fb,UTSA vs USMA
     11,22,2025,12:00,16:00,fb,Tulsa vs USMA
     11,08,2025,12:00,16:00,fb,Tulane vs USMA
-    11,08,2025,09:00,11:30,dj,Black Knight Alley Tailgate
+    11,08,2025,09:00,11:30,dj,Black Knight Alley Tailgate,No Description,WalBanMun,9e19ef94-da2f-45dc-aaa6-49df17095e3c,4SiSoqvy5cdjlg5775W8a5?utm_source=generator,videoseries?si=fuTYRnKGL6QAY7mR&amp;list=PLOh6mlSStDuRI6WAASOAXp7AkvYdhcJoK,videoseries?si=ofPIJlY61bmb5RiM&amp;list=PLOh6mlSStDuSbUxmBgulIXHaM0FH18X3D
     11,06,2025,16:30,18:30,pa,Drill Support
     11,05,2025,16:30,18:30,pa,Drill Support
     11,04,2025,16:00,19:00,dj,Brigade Athletics Finals,No Description,BanLor,9e0b2669-e561-4f91-bc73-dac86364cc6c,4SiSoqvy5cdjlg5775W8a5?utm_source=generator,videoseries?si=-LFWycOKutAUg6YA&amp;list=PLOh6mlSStDuQe6cY3d5EQEjBo9uSWFjTV,videoseries?si=fO1SlbpFmzEQkgz5&amp;list=PLOh6mlSStDuS9sZGfwnNBb_7j_DWVKU7R
@@ -416,6 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });    
 });
+
 
 
 
